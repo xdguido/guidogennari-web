@@ -4,7 +4,7 @@ module.exports = {
     theme: {
         extend: {},
         fontFamily: {
-            logo: ['Notable, sans-serif']
+            header: ['"DM Serif Text", serif']
         }
     },
     plugins: []

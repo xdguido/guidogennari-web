@@ -5,9 +5,10 @@ module.exports = {
     },
     extends: [
         'plugin:react/recommended',
-        'standard-with-typescript',
         'plugin:@typescript-eslint/recommended',
-        'plugin:prettier/recommended'
+        'plugin:prettier/recommended',
+        'standard-with-typescript',
+        'prettier/@typescript-eslint'
     ],
     overrides: [],
     parserOptions: {

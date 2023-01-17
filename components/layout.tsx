@@ -1,6 +1,5 @@
 import Head from 'next/head';
-import Image from 'next/image';
-import Link from 'next/link';
+import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 
 const name = 'Guido Gennari';
 export const siteTitle = 'Guido Gennari - Web Development';
@@ -20,12 +19,39 @@ export default function Layout({ children, home }: { children: React.ReactNode; 
                 <meta name="og:title" content={siteTitle} />
                 <meta name="twitter:card" content="summary_large_image" />
             </Head>
-            <header className="relative flex justify-between p-4">
-                <h1 className="font-extrabold tracking-tight text-3xl">{name}</h1>
+            <header className="relative flex items-center justify-between border-b border-b-gray-300 p-4 lg:p-5">
+                <h1 className="font-extrabold leading-6 tracking-tight text-2xl">
+                    Guido
+                    <br />
+                    Gennari
+                </h1>
                 <ul id="socials" className="font-extrabold tracking-tight text-3xl flex">
-                    <li>1</li>
-                    <li>2</li>
-                    <li>3</li>
+                    <li>
+                        <a
+                            title="GitHub"
+                            target="_blank"
+                            href="https://github.com/xdguido"
+                            rel="noopener noreferrer"
+                        >
+                            <span className="sr-only">GitHub page</span>
+                            <div className="rounded hover:text-blue-600 p-1" aria-hidden="true">
+                                <FaGithub />
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            title="Linkedin"
+                            target="_blank"
+                            href="https://www.linkedin.com/in/guido-gennari/"
+                            rel="noopener noreferrer"
+                        >
+                            <span className="sr-only">Linkedin page</span>
+                            <div className="rounded hover:text-blue-600 p-1" aria-hidden="true">
+                                <FaLinkedinIn />
+                            </div>
+                        </a>
+                    </li>
                 </ul>
             </header>
             <main className="flex flex-auto justify-center p-4">{children}</main>
