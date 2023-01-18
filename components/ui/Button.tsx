@@ -5,7 +5,7 @@ import Link from 'next/link';
 const buttonStyles = cva(
     clsx(
         'flex items-center justify-center px-6 py-2.5 font-medium text-sm leading-tight uppercase rounded',
-        'focus:outline-none focus:ring-offset-2 focus:ring-2',
+        'focus:outline-none focus-visible:ring-offset-2 focus-visible:ring-2',
         'transition duration-150 ease-in-out'
     ),
     {
@@ -14,12 +14,13 @@ const buttonStyles = cva(
                 solid: clsx(
                     'bg-black text-white shadow-md',
                     'hover:bg-blue-600 hover:shadow-lg',
-                    'focus:bg-blue-700 focus:shadow-lg',
+                    'focus-visible:bg-blue-600 focus-visible:shadow-lg',
                     'active:bg-blue-800 active:shadow-lg'
                 ),
                 outline: clsx(
                     'py-2 border-2 border-black ',
                     'hover:bg-black hover:bg-opacity-5 hover:border-blue-600 hover:text-blue-700 ',
+                    'focus-visible:bg-opacity-5',
                     'active:text-blue-800 active:bg-opacity-10'
                 )
             },
