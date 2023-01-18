@@ -6,6 +6,8 @@
         "start": "next start"
     },
     "dependencies": {
+        "@next/font": "^13.1.2",
+        "class-variance-authority": "^0.4.0",
         "next": "latest",
         "react": "18.2.0",
         "react-dom": "18.2.0",
@@ -17,6 +19,7 @@
         "@typescript-eslint/eslint-plugin": "^5.48.1",
         "@typescript-eslint/parser": "^5.48.1",
         "autoprefixer": "^10.4.13",
+        "clsx": "^1.2.1",
         "eslint": "^8.31.0",
         "eslint-config-prettier": "^8.6.0",
         "eslint-config-standard-with-typescript": "^26.0.0",

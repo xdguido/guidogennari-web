@@ -1,12 +1,11 @@
 import Head from 'next/head';
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 
-const name = 'Guido Gennari';
 export const siteTitle = 'Guido Gennari - Web Development';
 
 export default function Layout({ children, home }: { children: React.ReactNode; home?: boolean }) {
     return (
-        <div className="flex flex-col min-h-screen bg-slate-100">
+        <div className="flex flex-col min-h-screen bg-slate-50">
             <Head>
                 <link rel="icon" href="/favicon.ico" />
                 <meta name="description" content="Web developer - React - JavaScript" />
@@ -20,7 +19,7 @@ export default function Layout({ children, home }: { children: React.ReactNode; 
                 <meta name="twitter:card" content="summary_large_image" />
             </Head>
             <header className="relative flex items-center justify-between border-b border-b-gray-300 p-4 lg:p-5">
-                <h1 className="font-extrabold leading-6 tracking-tight text-2xl">
+                <h1 className="font-neue leading-6 tracking-tight text-xl">
                     Guido
                     <br />
                     Gennari
