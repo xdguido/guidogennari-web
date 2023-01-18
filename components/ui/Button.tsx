@@ -19,9 +19,8 @@ const buttonStyles = cva(
                 ),
                 outline: clsx(
                     'py-2 border-2 border-black ',
-                    'hover:bg-black hover:bg-opacity-5 hover:border-blue-600 hover:text-blue-700 ',
-                    'focus-visible:bg-opacity-5',
-                    'active:text-blue-800 active:bg-opacity-10'
+                    'hover:border-blue-600 hover:text-blue-700 ',
+                    'active:text-blue-800 active:border-blue-800 active:bg-black active:bg-opacity-10'
                 )
             },
             fullWidth: { true: 'w-full' }
