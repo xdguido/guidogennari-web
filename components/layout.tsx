@@ -33,7 +33,10 @@ export default function Layout({ children, home }: { children: React.ReactNode; 
                             rel="noopener noreferrer"
                         >
                             <span className="sr-only">GitHub page</span>
-                            <div className="rounded hover:text-blue-600 p-1" aria-hidden="true">
+                            <div
+                                className="rounded hover:text-blue-600 focus-visible:text-blue-600 active:text-blue-600  p-1"
+                                aria-hidden="true"
+                            >
                                 <FaGithub />
                             </div>
                         </a>
@@ -46,7 +49,10 @@ export default function Layout({ children, home }: { children: React.ReactNode; 
                             rel="noopener noreferrer"
                         >
                             <span className="sr-only">Discord profile</span>
-                            <div className="rounded hover:text-blue-600 p-1" aria-hidden="true">
+                            <div
+                                className="rounded hover:text-blue-600 focus-visible:text-blue-600 active:text-blue-600  p-1"
+                                aria-hidden="true"
+                            >
                                 <FaDiscord />
                             </div>
                         </a>
@@ -59,7 +65,10 @@ export default function Layout({ children, home }: { children: React.ReactNode; 
                             rel="noopener noreferrer"
                         >
                             <span className="sr-only">Linkedin page</span>
-                            <div className="rounded hover:text-blue-600 p-1" aria-hidden="true">
+                            <div
+                                className="rounded hover:text-blue-600 focus-visible:text-blue-600 active:text-blue-600  p-1"
+                                aria-hidden="true"
+                            >
                                 <FaLinkedinIn />
                             </div>
                         </a>
