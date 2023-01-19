@@ -7,7 +7,7 @@ module.exports = {
     theme: {
         extend: {},
         fontFamily: {
-            neue: ['var(--font-neue)', ...fontFamily.sans]
+            neue: ['var(--font-neue)', ...fontFamily.serif]
         }
     },
     plugins: []

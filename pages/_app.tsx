@@ -9,8 +9,8 @@ const myFont = localFont({
 
 export default function App({ Component, pageProps }: AppProps) {
     return (
-        <main className={myFont.variable}>
+        <div className={myFont.variable}>
             <Component {...pageProps} />
-        </main>
+        </div>
     );
 }
