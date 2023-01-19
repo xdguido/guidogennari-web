@@ -1,5 +1,4 @@
 import Head from 'next/head';
-import Link from 'next/link';
 import Image from 'next/image';
 import Layout, { siteTitle } from '../components/layout';
 import clsx from 'clsx';
@@ -14,7 +13,9 @@ export default function Home() {
             </Head>
             <section
                 id="hero"
-                className={clsx('flex flex-col items-center text-center pt-[7rem] min-h-screen')}
+                className={clsx(
+                    'flex flex-col items-center text-center pt-[5rem] md:pt-[7rem] min-h-screen'
+                )}
             >
                 <h1 className="font-neue tracking-tight text-6xl md:text-7xl lg:text-8xl">
                     Guido Gennari
@@ -22,7 +23,7 @@ export default function Home() {
                 <p className="text-gray-900 lg:text-lg">
                     Web developer. Building freelance projects with React ✨
                 </p>
-                <div className="relative aspect-square w-[11rem] lg:w-[15rem] my-11 lg:my-12 xl:my-16">
+                <div className="relative aspect-square w-[11rem] lg:w-[15rem] my-8 md:my-11 lg:my-12 xl:my-16">
                     <Image
                         priority
                         src="/images/example1.jpg"
