@@ -18,7 +18,7 @@ const buttonStyles = cva(
                     'active:bg-blue-800 active:shadow-lg'
                 ),
                 outline: clsx(
-                    'py-2 border-2 border-black ',
+                    'py-2 border border-black ',
                     'hover:border-blue-600 hover:text-blue-700 ',
                     'active:text-blue-800 active:border-blue-800 active:bg-black active:bg-opacity-10'
                 )

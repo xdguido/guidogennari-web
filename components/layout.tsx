@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
+import { FaGithub, FaLinkedinIn, FaDiscord } from 'react-icons/fa';
 
 export const siteTitle = 'Guido Gennari - Web Development';
 
@@ -35,6 +35,19 @@ export default function Layout({ children, home }: { children: React.ReactNode; 
                             <span className="sr-only">GitHub page</span>
                             <div className="rounded hover:text-blue-600 p-1" aria-hidden="true">
                                 <FaGithub />
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            title="Discord"
+                            target="_blank"
+                            href="https://discordapp.com/users/xdguido#4212"
+                            rel="noopener noreferrer"
+                        >
+                            <span className="sr-only">Discord profile</span>
+                            <div className="rounded hover:text-blue-600 p-1" aria-hidden="true">
+                                <FaDiscord />
                             </div>
                         </a>
                     </li>

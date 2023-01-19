@@ -1,8 +1,10 @@
 import Head from 'next/head';
+import Link from 'next/link';
 import Image from 'next/image';
 import Layout, { siteTitle } from '../components/layout';
 import clsx from 'clsx';
 import Button from '@ui/Button';
+import { FaArrowCircleRight } from 'react-icons/fa';
 
 export default function Home() {
     return (
@@ -31,54 +33,84 @@ export default function Home() {
                 </div>
                 <div className="flex gap-4 lg:gap-6 ">
                     <Button href="/" children="Work" />
-                    <Button children="Contact me" style="outline" />
+                    <Button
+                        href="mailto:guidogennari95@gmail.com"
+                        children="Contact me"
+                        style="outline"
+                    />
                 </div>
             </section>
-            <section id="work" className={clsx('relative')}>
+            <section
+                id="work"
+                className={clsx('relative flex flex-col justify-center items-center')}
+            >
                 <h2 className="absolute inset-x-0 -top-16 font-neue text-4xl text-blue-600">
                     Work
                 </h2>
-                <div className="flex flex-wrap gap-4 justify-center">
-                    <div
-                        id="card"
-                        className=" min-w-[25rem] max-w-[30rem] rounded-lg shadow-md overflow-hidden"
-                    >
-                        <div className="relative aspect-video">
-                            <Image
-                                className="object-cover"
-                                src="/images/banner.png"
-                                alt="Portfolio Image"
-                                fill
-                                loading="lazy"
-                            />
+                <div
+                    id="item-1"
+                    className="flex flex-col items-center mb-[6rem] lg:mb-[10rem] lg:flex-row lg:items-start"
+                >
+                    <div className="p-2 mb-3 lg:w-[26rem] lg:mr-12">
+                        <div className="text-xl font-medium mb-2 lg:text-2xl">Landing Pages</div>
+                        <div className=" text-gray-600 lg:text-lg">
+                            Modern and SEO optimized pages for business.
                         </div>
-                        <div className="px-6 py-4">
-                            <div className=" text-xl font-medium">Landing Pages</div>
-                            <div className=" text-gray-600">
-                                Modern and SEO optimized pages for business.
-                            </div>
+                        <div className="flex mt-4 gap-6  ">
+                            <Button children="Live preview" />
+                            <Button children="Details" style="outline" />
                         </div>
                     </div>
                     <div
-                        id="card"
-                        className=" min-w-[25rem] max-w-[30rem] rounded-lg shadow-md overflow-hidden"
+                        className={clsx(
+                            'relative w-[22rem] aspect-square',
+                            'md:w-[25rem] lg:w-[30rem] xl:w-[36rem]'
+                        )}
                     >
-                        <div className="relative aspect-video ">
-                            <Image
-                                className="  object-cover transition duration-1000 ease-in-out"
-                                src="/images/banner.png"
-                                alt="Portfolio Image"
-                                fill
-                                loading="lazy"
-                            />
+                        <Image
+                            className="object-cover rounded-lg shadow-md"
+                            src="/images/banner.png"
+                            alt="Portfolio Image"
+                            fill
+                            loading="lazy"
+                        />
+                    </div>
+                </div>
+                <div
+                    id="item-2"
+                    className="flex flex-col items-center mb-[6rem] lg:flex-row lg:items-start"
+                >
+                    <div className="p-2 mb-3 lg:w-[26rem] lg:mr-12">
+                        <div className="text-xl font-medium mb-2 lg:text-2xl">
+                            Full-stack Library App
                         </div>
-                        <div className="px-6 py-4">
-                            <div className=" text-xl font-medium">Full-stack Library App</div>
-                            <div className=" text-gray-600">
-                                Build and share your favourite book lists.
-                            </div>
+                        <div className=" text-gray-600 lg:text-lg">
+                            Build and share your favourites book lists.
+                        </div>
+                        <div className="flex mt-4 gap-6  ">
+                            <Button children="Live preview" />
+                            <Button children="Details" style="outline" />
                         </div>
                     </div>
+                    <div
+                        className={clsx(
+                            'relative w-[22rem] aspect-square',
+                            'md:w-[25rem] lg:w-[30rem] xl:w-[36rem]'
+                        )}
+                    >
+                        <Image
+                            className="object-cover rounded-lg shadow-md"
+                            src="/images/banner2.png"
+                            alt="Portfolio Image"
+                            fill
+                            loading="lazy"
+                        />
+                    </div>
+                </div>
+                <div>
+                    <button className="flex items-center gap-3 text-lg font-semibold text-gray-600 hover:text-blue-600 focus-visible:text-blue-600 active:text-blue-800 p-2">
+                        More projects <FaArrowCircleRight className="" />
+                    </button>
                 </div>
             </section>
         </Layout>
