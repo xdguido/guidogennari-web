@@ -33,11 +33,12 @@ export default function Home() {
                     />
                 </div>
                 <div className="flex gap-4 lg:gap-6 ">
-                    <Button href="/" children="Work" />
+                    <Button href="#work" children="Work" uppercase={true} />
                     <Button
                         href="mailto:guidogennari95@gmail.com"
                         children="Contact me"
                         style="outline"
+                        uppercase={true}
                     />
                 </div>
             </section>
@@ -58,8 +59,8 @@ export default function Home() {
                             Modern and SEO optimized pages for business.
                         </div>
                         <div className="flex mt-4 gap-6  ">
-                            <Button children="Live preview" />
-                            <Button children="Details" style="outline" />
+                            <Button children="Live preview" intent="secondary" />
+                            <Button children="Details" intent="secondary" style="outline" />
                         </div>
                     </div>
                     <div
@@ -89,8 +90,8 @@ export default function Home() {
                             Build and share your favourites book lists.
                         </div>
                         <div className="flex mt-4 gap-6  ">
-                            <Button children="Live preview" />
-                            <Button children="Details" style="outline" />
+                            <Button children="Live preview" intent="secondary" />
+                            <Button children="Details" intent="secondary" style="outline" />
                         </div>
                     </div>
                     <div
