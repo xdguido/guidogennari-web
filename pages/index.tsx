@@ -23,7 +23,7 @@ export default function Home() {
                 <p className="text-gray-900 lg:text-lg">
                     Web developer. Building freelance projects with React ✨
                 </p>
-                <div className="relative aspect-square w-[11rem] lg:w-[15rem] my-8 md:my-11 lg:my-12 xl:my-16">
+                <div className="relative aspect-square w-[12rem] lg:w-[15rem] my-[5vh]">
                     <Image
                         priority
                         src="/images/example1.jpg"
