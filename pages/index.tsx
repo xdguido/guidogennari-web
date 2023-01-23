@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Layout, { siteTitle } from '../components/layout';
 import clsx from 'clsx';
 import Button from '@ui/Button';
-import TechLogo from '@ui/TechLogo';
+import { ReactLogo, NextjsLogo, ExpressjsLogo, MongodbLogo } from '@ui/TechLogo';
 import { FaArrowCircleRight, FaExternalLinkAlt, FaArrowRight } from 'react-icons/fa';
 
 export default function Home() {
@@ -58,8 +58,8 @@ export default function Home() {
                                 Modern and SEO optimized pages for business.
                             </div>
                             <div className="flex justify-center md:justify-start my-5 gap-6">
-                                <TechLogo icon="react" />
-                                <TechLogo icon="next" />
+                                <ReactLogo />
+                                <NextjsLogo />
                             </div>
                             <div className="flex justify-center md:justify-start mt-4 gap-6">
                                 <Button intent="secondary">
@@ -97,9 +97,9 @@ export default function Home() {
                                 Build and share your favourites book lists.
                             </div>
                             <div className="flex justify-center md:justify-start my-5 gap-6">
-                                <TechLogo icon="react" />
-                                <TechLogo icon="express" />
-                                <TechLogo icon="mongodb" />
+                                <ReactLogo />
+                                <ExpressjsLogo />
+                                <MongodbLogo />
                             </div>
                             <div className="flex justify-center md:justify-start mt-4 gap-6">
                                 <Button intent="secondary">
