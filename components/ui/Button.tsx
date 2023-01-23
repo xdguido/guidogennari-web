@@ -50,12 +50,12 @@ const buttonStyles = cva(
             {
                 intent: 'secondary',
                 style: 'solid',
-                class: 'bg-gray-800 '
+                class: 'bg-gray-700 '
             },
             {
                 intent: 'secondary',
                 style: 'outline',
-                class: 'border-gray-800'
+                class: 'border-gray-700'
             }
         ]
     }
