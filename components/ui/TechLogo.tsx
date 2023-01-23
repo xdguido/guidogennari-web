@@ -7,13 +7,25 @@ export default function TechLogo({
 }: {
     icon: 'react' | 'next' | 'mongodb' | 'express';
 }) {
+    let link: string;
+    switch (icon) {
+        case 'react':
+            link = 'https://reactjs.org/';
+            break;
+        case 'next':
+            link = 'https://nextjs.org/';
+            break;
+        case 'mongodb':
+            link = 'https://www.mongodb.com/';
+            break;
+        case 'express':
+            link = 'https://expressjs.com/';
+            break;
+    }
     return (
         <Link
-            href={`
-            ${icon === 'react' && 'https://reactjs.org/'}
-            ${icon === 'next' && 'https://nextjs.org/'}
-            ${icon === 'mongodb' && 'https://expressjs.com/'}
-            ${icon === 'express' && 'https://www.mongodb.com/'}`}
+            href={link}
+            target="_blank"
             className="flex justify-center items-center gap-2 text-slate-500"
             {...props}
         >
