@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Layout, { siteTitle } from '../components/layout';
 import clsx from 'clsx';
 import Button from '@ui/Button';
+import TechLogo from '@ui/TechLogo';
 import { FaArrowCircleRight, FaExternalLinkAlt, FaArrowRight } from 'react-icons/fa';
 
 export default function Home() {
@@ -56,6 +57,10 @@ export default function Home() {
                             <div className=" text-gray-600 lg:text-lg">
                                 Modern and SEO optimized pages for business.
                             </div>
+                            <div className="flex justify-center md:justify-start my-5 gap-6">
+                                <TechLogo icon="react" />
+                                <TechLogo icon="next" />
+                            </div>
                             <div className="flex justify-center md:justify-start mt-4 gap-6">
                                 <Button intent="secondary">
                                     Live preview <FaExternalLinkAlt />
@@ -90,6 +95,11 @@ export default function Home() {
                             </div>
                             <div className=" text-gray-600 lg:text-lg">
                                 Build and share your favourites book lists.
+                            </div>
+                            <div className="flex justify-center md:justify-start my-5 gap-6">
+                                <TechLogo icon="react" />
+                                <TechLogo icon="express" />
+                                <TechLogo icon="mongodb" />
                             </div>
                             <div className="flex justify-center md:justify-start mt-4 gap-6">
                                 <Button intent="secondary">

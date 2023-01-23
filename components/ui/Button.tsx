@@ -21,7 +21,7 @@ const buttonStyles = cva(
                     'active:bg-blue-800 active:shadow-lg'
                 ],
                 outline: [
-                    'py-2 border bg-slate-50',
+                    'py-2 border border-slate-400 bg-slate-50',
                     'hover:border-blue-600 hover:text-blue-600',
                     'focus-visible:text-blue-600 focus-visible:border-blue-600',
                     'active:text-blue-800 active:border-blue-800 active:bg-black active:bg-opacity-10'
