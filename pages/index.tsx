@@ -14,7 +14,7 @@ export default function Home() {
             <section
                 id="hero"
                 className={clsx(
-                    'flex flex-col items-center text-center pt-[6rem] md:pt-[7rem] min-h-screen bg-gradient-to-t from-slate-500 via-slate-50'
+                    'flex flex-col items-center text-center pt-[6rem] md:pt-[7rem] min-h-screen bg-gradient-to-t from-gray-400 via-slate-50'
                 )}
             >
                 <h1 className="font-neue tracking-tight text-6xl md:text-7xl lg:text-8xl">
