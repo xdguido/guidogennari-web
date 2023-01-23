@@ -15,14 +15,14 @@ const buttonStyles = cva(
             },
             style: {
                 solid: [
-                    'shadow-md text-white',
+                    'shadow-md text-slate-50',
                     'hover:bg-blue-600 hover:shadow-lg',
                     'focus-visible:bg-blue-600 focus-visible:shadow-lg',
                     'active:bg-blue-800 active:shadow-lg'
                 ],
                 outline: [
-                    'py-2 border',
-                    'hover:border-blue-600 hover:text-blue-700 ',
+                    'py-2 border bg-slate-50',
+                    'hover:border-blue-600 hover:text-blue-700',
                     'focus-visible:text-blue-600 focus-visible:border-blue-600',
                     'active:text-blue-800 active:border-blue-800 active:bg-black active:bg-opacity-10'
                 ]

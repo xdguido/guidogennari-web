@@ -14,7 +14,7 @@ export default function Home() {
             <section
                 id="hero"
                 className={clsx(
-                    'flex flex-col items-center text-center pt-[6rem] md:pt-[7rem] min-h-screen'
+                    'flex flex-col items-center text-center pt-[6rem] md:pt-[7rem] min-h-screen bg-gradient-to-t from-slate-500 via-slate-50'
                 )}
             >
                 <h1 className="font-neue tracking-tight text-6xl md:text-7xl lg:text-8xl">
@@ -43,7 +43,7 @@ export default function Home() {
                 </div>
             </section>
             <section id="work" className="relative pt-[6rem] md:pt-[7rem]">
-                <h2 className="font-neue text-4xl text-blue-600 mb-8">Work</h2>
+                <h2 className="font-neue text-4xl text-blue-600 mb-8 px-6">Work</h2>
                 <div className="flex flex-col justify-center items-center">
                     <div
                         id="item-1"
