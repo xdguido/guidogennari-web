@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 const buttonStyles = cva(
     [
-        'flex items-center justify-center px-6 py-2.5 font-medium text-sm leading-tight rounded-md',
+        'flex items-center justify-center gap-2 px-6 py-2.5 font-medium text-sm leading-tight rounded-md',
         'focus:outline-none focus-visible:ring-offset-2 focus-visible:ring-2',
         'transition duration-150 ease-in-out'
     ],
@@ -55,7 +55,7 @@ const buttonStyles = cva(
             {
                 intent: 'secondary',
                 style: 'outline',
-                class: 'border-gray-700'
+                class: 'border-gray-700 text-gray-700'
             }
         ]
     }

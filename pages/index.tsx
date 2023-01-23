@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Layout, { siteTitle } from '../components/layout';
 import clsx from 'clsx';
 import Button from '@ui/Button';
-import { FaArrowCircleRight } from 'react-icons/fa';
+import { FaArrowCircleRight, FaExternalLinkAlt, FaArrowRight } from 'react-icons/fa';
 
 export default function Home() {
     return (
@@ -56,9 +56,13 @@ export default function Home() {
                             <div className=" text-gray-600 lg:text-lg">
                                 Modern and SEO optimized pages for business.
                             </div>
-                            <div className="flex justify-center md:justify-start mt-4 gap-6  ">
-                                <Button children="Live preview" intent="secondary" />
-                                <Button children="Details" intent="secondary" style="outline" />
+                            <div className="flex justify-center md:justify-start mt-4 gap-6">
+                                <Button intent="secondary">
+                                    Live preview <FaExternalLinkAlt />
+                                </Button>
+                                <Button intent="secondary" style="outline">
+                                    Details <FaArrowRight />
+                                </Button>
                             </div>
                         </div>
                         <div
@@ -87,9 +91,13 @@ export default function Home() {
                             <div className=" text-gray-600 lg:text-lg">
                                 Build and share your favourites book lists.
                             </div>
-                            <div className="flex justify-center md:justify-start mt-4 gap-6  ">
-                                <Button children="Live preview" intent="secondary" />
-                                <Button children="Details" intent="secondary" style="outline" />
+                            <div className="flex justify-center md:justify-start mt-4 gap-6">
+                                <Button intent="secondary">
+                                    Live preview <FaExternalLinkAlt />
+                                </Button>
+                                <Button intent="secondary" style="outline">
+                                    Details <FaArrowRight />
+                                </Button>
                             </div>
                         </div>
                         <div
@@ -108,7 +116,7 @@ export default function Home() {
                         </div>
                     </div>
                     <div>
-                        <button className="flex items-center gap-3 text-lg font-semibold text-gray-600 hover:text-blue-600 focus-visible:text-blue-600 active:text-blue-800 p-2">
+                        <button className="flex items-center gap-3 text-lg font-semibold text-gray-600 hover:text-blue-600 focus-visible:text-blue-600 active:text-blue-800 p-2 mb-2">
                             More projects <FaArrowCircleRight className="" />
                         </button>
                     </div>
