@@ -15,13 +15,13 @@ export default function Home() {
             <section
                 id="hero"
                 className={clsx(
-                    'flex flex-col items-center text-center pt-[6rem] md:pt-[7rem] min-h-screen bg-gradient-to-t from-gray-400 via-slate-50'
+                    'flex flex-col items-center text-center pt-[6rem] md:pt-[7rem] min-h-screen'
                 )}
             >
                 <h1 className="font-neue tracking-tight text-6xl md:text-7xl lg:text-8xl">
                     Guido Gennari
                 </h1>
-                <p className="text-gray-900 lg:text-lg">
+                <p className="text-gray-900 dark:text-slate-400 lg:text-lg">
                     Web developer. Building freelance projects with React ✨
                 </p>
                 <div className="relative aspect-square w-[12rem] lg:w-[15rem] my-[5vh]">
@@ -34,17 +34,18 @@ export default function Home() {
                     />
                 </div>
                 <div className="flex gap-4 lg:gap-6 ">
-                    <Button href="#work" children="Work" uppercase={true} />
+                    <Button href="#work" children="Work" />
                     <Button
                         href="mailto:guidogennari95@gmail.com"
                         children="Contact me"
                         style="outline"
-                        uppercase={true}
                     />
                 </div>
             </section>
             <section id="work" className="relative pt-[6rem] md:pt-[7rem]">
-                <h2 className="font-neue text-4xl text-blue-600 mb-8 px-6">Work</h2>
+                <h2 className="font-neue text-4xl text-blue-600 dark:text-slate-100 mb-8 px-6">
+                    Work
+                </h2>
                 <div className="flex flex-col justify-center items-center">
                     <div
                         id="item-1"
@@ -54,7 +55,7 @@ export default function Home() {
                             <div className="text-xl font-medium mb-2 lg:text-2xl">
                                 Landing Pages
                             </div>
-                            <div className=" text-gray-600 lg:text-lg">
+                            <div className=" text-gray-600 dark:text-gray-400 lg:text-lg">
                                 Modern and SEO optimized pages for business.
                             </div>
                             <div className="flex justify-center md:justify-start my-5 gap-6">
@@ -62,10 +63,10 @@ export default function Home() {
                                 <NextjsLogo />
                             </div>
                             <div className="flex justify-center md:justify-start mt-4 gap-6">
-                                <Button intent="secondary">
+                                <Button colorScheme="gray">
                                     Live preview <FaExternalLinkAlt />
                                 </Button>
-                                <Button intent="secondary" style="outline">
+                                <Button colorScheme="gray" style="outline">
                                     Details <FaArrowRight />
                                 </Button>
                             </div>
@@ -93,7 +94,7 @@ export default function Home() {
                             <div className="text-xl font-medium mb-2 lg:text-2xl">
                                 Full-stack Library App
                             </div>
-                            <div className=" text-gray-600 lg:text-lg">
+                            <div className=" text-gray-600 dark:text-gray-400 lg:text-lg">
                                 Build and share your favourites book lists.
                             </div>
                             <div className="flex justify-center md:justify-start my-5 gap-6">
@@ -102,10 +103,10 @@ export default function Home() {
                                 <MongodbLogo />
                             </div>
                             <div className="flex justify-center md:justify-start mt-4 gap-6">
-                                <Button intent="secondary">
+                                <Button colorScheme="gray">
                                     Live preview <FaExternalLinkAlt />
                                 </Button>
-                                <Button intent="secondary" style="outline">
+                                <Button colorScheme="gray" style="outline">
                                     Details <FaArrowRight />
                                 </Button>
                             </div>
@@ -126,7 +127,7 @@ export default function Home() {
                         </div>
                     </div>
                     <div>
-                        <button className="flex items-center gap-3 text-lg font-semibold text-gray-600 hover:text-blue-600 focus-visible:text-blue-600 active:text-blue-800 p-2 mb-2">
+                        <button className="flex items-center gap-3 text-lg font-semibold dark:text-slate-100 text-gray-600 hover:text-blue-600 focus-visible:text-blue-600 active:text-blue-800 p-2 mb-2">
                             More projects <FaArrowCircleRight className="" />
                         </button>
                     </div>
