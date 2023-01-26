@@ -19,7 +19,8 @@ const buttonStyles = cva(
                 outline: ['py-2 border bg-inherit']
             },
             fullWidth: { true: 'w-full' },
-            uppercase: { true: 'uppercase' }
+            uppercase: { true: 'uppercase' },
+            square: { true: 'px-2.5' }
         },
         defaultVariants: {
             colorScheme: 'blue',
@@ -87,6 +88,7 @@ export default function Button({
     style,
     fullWidth,
     uppercase,
+    square,
     children,
     onClick,
     href,
@@ -95,7 +97,7 @@ export default function Button({
     return href ? (
         <Link
             href={href}
-            className={buttonStyles({ colorScheme, style, fullWidth, uppercase })}
+            className={buttonStyles({ colorScheme, style, fullWidth, uppercase, square })}
             {...props}
         >
             {children}
@@ -103,7 +105,7 @@ export default function Button({
     ) : (
         <button
             onClick={onClick}
-            className={buttonStyles({ colorScheme, style, fullWidth, uppercase })}
+            className={buttonStyles({ colorScheme, style, fullWidth, uppercase, square })}
             {...props}
         >
             {children}

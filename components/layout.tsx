@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import { FaGithub, FaLinkedinIn, FaDiscord } from 'react-icons/fa';
+import ThemeToggler from '@ui/ThemeToggler';
 
 export const siteTitle = 'Guido Gennari - Web Development';
 
@@ -24,56 +25,59 @@ export default function Layout({ children, home }: { children: React.ReactNode; 
                     <br />
                     Gennari
                 </h1>
-                <ul id="socials" className="font-extrabold tracking-tight text-3xl flex">
-                    <li>
-                        <a
-                            title="GitHub"
-                            target="_blank"
-                            href="https://github.com/xdguido"
-                            rel="noopener noreferrer"
-                        >
-                            <span className="sr-only">GitHub page</span>
-                            <div
-                                className="rounded hover:text-blue-600 focus-visible:text-blue-600 active:text-blue-600  p-1"
-                                aria-hidden="true"
+                <div className="flex gap-3">
+                    <ThemeToggler />
+                    <ul id="socials" className="font-extrabold tracking-tight text-3xl flex">
+                        <li>
+                            <a
+                                title="GitHub"
+                                target="_blank"
+                                href="https://github.com/xdguido"
+                                rel="noopener noreferrer"
                             >
-                                <FaGithub />
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a
-                            title="Discord"
-                            target="_blank"
-                            href="https://discordapp.com/users/xdguido#4212"
-                            rel="noopener noreferrer"
-                        >
-                            <span className="sr-only">Discord profile</span>
-                            <div
-                                className="rounded hover:text-blue-600 focus-visible:text-blue-600 active:text-blue-600  p-1"
-                                aria-hidden="true"
+                                <span className="sr-only">GitHub page</span>
+                                <div
+                                    className="rounded hover:text-blue-600 focus-visible:text-blue-600 active:text-blue-600  p-1"
+                                    aria-hidden="true"
+                                >
+                                    <FaGithub />
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                title="Discord"
+                                target="_blank"
+                                href="https://discordapp.com/users/xdguido#4212"
+                                rel="noopener noreferrer"
                             >
-                                <FaDiscord />
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a
-                            title="Linkedin"
-                            target="_blank"
-                            href="https://www.linkedin.com/in/guido-gennari/"
-                            rel="noopener noreferrer"
-                        >
-                            <span className="sr-only">Linkedin page</span>
-                            <div
-                                className="rounded hover:text-blue-600 focus-visible:text-blue-600 active:text-blue-600  p-1"
-                                aria-hidden="true"
+                                <span className="sr-only">Discord profile</span>
+                                <div
+                                    className="rounded hover:text-blue-600 focus-visible:text-blue-600 active:text-blue-600  p-1"
+                                    aria-hidden="true"
+                                >
+                                    <FaDiscord />
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                title="Linkedin"
+                                target="_blank"
+                                href="https://www.linkedin.com/in/guido-gennari/"
+                                rel="noopener noreferrer"
                             >
-                                <FaLinkedinIn />
-                            </div>
-                        </a>
-                    </li>
-                </ul>
+                                <span className="sr-only">Linkedin page</span>
+                                <div
+                                    className="rounded hover:text-blue-600 focus-visible:text-blue-600 active:text-blue-600  p-1"
+                                    aria-hidden="true"
+                                >
+                                    <FaLinkedinIn />
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </header>
             <main className="flex flex-auto flex-col">{children}</main>
             <footer className="flex items-center justify-between bg-black dark:bg-gray-300 h-[8rem] p-4 lg:p-5">
