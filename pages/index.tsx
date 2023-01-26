@@ -21,7 +21,7 @@ export default function Home() {
                 <h1 className="font-neue tracking-tight text-6xl md:text-7xl lg:text-8xl">
                     Guido Gennari
                 </h1>
-                <p className="text-gray-900 dark:text-slate-400 lg:text-lg">
+                <p className="text-gray-900 dark:text-gray-400 lg:text-lg">
                     Web developer. Building freelance projects with React ✨
                 </p>
                 <div className="relative aspect-square w-[12rem] lg:w-[15rem] my-[5vh]">
