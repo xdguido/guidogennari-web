@@ -1,6 +1,5 @@
-import Head from 'next/head';
 import Image from 'next/image';
-import Layout, { siteTitle } from '../components/layout';
+import Layout from '../components/layout';
 import clsx from 'clsx';
 import Button from '@ui/Button';
 import { ReactLogo, NextjsLogo, ExpressjsLogo, MongodbLogo } from '@ui/TechLogo';
@@ -9,9 +8,6 @@ import { FaArrowCircleRight, FaExternalLinkAlt, FaArrowRight } from 'react-icons
 export default function Home() {
     return (
         <Layout home>
-            <Head>
-                <title>{siteTitle}</title>
-            </Head>
             <section
                 id="hero"
                 className={clsx(

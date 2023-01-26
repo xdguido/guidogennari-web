@@ -1,7 +1,10 @@
 import localFont from '@next/font/local';
 import { ThemeProvider } from 'next-themes';
-import '../styles/globals.css';
 import { AppProps } from 'next/app';
+import { DefaultSeo } from 'next-seo';
+import '../styles/globals.css';
+
+import SEO from '../next-seo.config';
 
 const myFont = localFont({
     src: '../fonts/NeueMetanaNext-SemiBold.otf',
@@ -12,6 +15,7 @@ export default function App({ Component, pageProps }: AppProps) {
     return (
         <ThemeProvider enableSystem={true} attribute="class">
             <div className={myFont.variable}>
+                <DefaultSeo {...SEO} />
                 <Component {...pageProps} />
             </div>
         </ThemeProvider>
