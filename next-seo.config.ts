@@ -6,7 +6,7 @@ const config: DefaultSeoProps = {
     // title: undefined,
     // titleTemplate: '%s | Guido Gennari',
     defaultTitle: siteName,
-    description: 'Guido Gennari personal website. Socials and work.',
+    description: 'Guido Gennari personal website. Work and socials.',
     canonical: 'https://guidogennari.vercel.app/',
     additionalMetaTags: [
         { property: 'author', content: 'guido gennari' },

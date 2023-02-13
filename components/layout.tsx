@@ -13,7 +13,6 @@ export default function Layout({ children, home }: { children: React.ReactNode; 
                     Gennari
                 </h1>
                 <div className="flex gap-3">
-                    <ThemeToggler />
                     <ul id="socials" className="font-extrabold tracking-tight text-3xl flex">
                         <li>
                             <a
@@ -64,6 +63,9 @@ export default function Layout({ children, home }: { children: React.ReactNode; 
                             </a>
                         </li>
                     </ul>
+                    <div className="flex justify-center items-center pl-5 ml-5 border-l border-l-slate-200 dark:border-l-slate-400">
+                        <ThemeToggler />
+                    </div>
                 </div>
             </header>
             <main className="flex flex-auto flex-col">{children}</main>
