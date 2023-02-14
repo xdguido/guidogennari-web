@@ -18,8 +18,9 @@ export default function Header() {
     return (
         <header
             className={clsx(
-                'z-50 fixed inset-x-0 top-0 flex flex-1 items-center justify-between   p-4 lg:p-5',
-                !top && 'backdrop-blur-md border-b border-b-gray-300 dark:border-b-gray-500'
+                'z-50 fixed inset-x-0 top-0 flex flex-1 items-center justify-between p-4 lg:p-5',
+                !top &&
+                    'bg-gray-50 md:bg-opacity-90 md:backdrop-blur-sm border-b border-b-gray-300 dark:bg-black dark:md:bg-opacity-90 dark:border-b-gray-500'
             )}
         >
             <h1 className="font-neue leading-6 tracking-tight text-xl">

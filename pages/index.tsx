@@ -14,12 +14,12 @@ export default function Home() {
                     'flex flex-col items-center text-center pt-[6rem] md:pt-[7rem] min-h-screen'
                 )}
             >
-                <h1 className="font-neue tracking-tight text-6xl md:text-7xl lg:text-8xl">
+                <h1 className="font-extrabold tracking-tight text-7xl md:text-8xl lg:text-9xl mb-[2vh]">
                     Guido Gennari
                 </h1>
-                <p className="text-gray-900 dark:text-gray-400 lg:text-lg">
+                <h2 className="text-gray-900 dark:text-gray-400 md:text-lg lg:text-xl">
                     Web developer. Building freelance projects with React ✨
-                </p>
+                </h2>
                 <div className="relative aspect-square w-[12rem] lg:w-[15rem] my-[5vh]">
                     <Image
                         priority
