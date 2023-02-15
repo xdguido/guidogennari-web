@@ -7,14 +7,14 @@ import { FaArrowCircleRight, FaExternalLinkAlt, FaArrowRight } from 'react-icons
 
 export default function Home() {
     return (
-        <Layout home>
+        <Layout>
             <section
                 id="hero"
                 className={clsx(
                     'flex flex-col items-center text-center pt-[6rem] md:pt-[7rem] min-h-screen'
                 )}
             >
-                <h1 className="font-extrabold tracking-tight text-7xl md:text-8xl lg:text-9xl mb-[2vh]">
+                <h1 className="font-extrabold text-7xl md:text-8xl lg:text-9xl mb-[2vh]">
                     Guido Gennari
                 </h1>
                 <h2 className="text-gray-900 dark:text-gray-400 md:text-lg lg:text-xl">
@@ -30,12 +30,10 @@ export default function Home() {
                     />
                 </div>
                 <div className="flex gap-4 lg:gap-6 ">
-                    <Button href="#work" children="Work" />
-                    <Button
-                        href="mailto:guidogennari95@gmail.com"
-                        children="Contact me"
-                        style="outline"
-                    />
+                    <Button href="#work">Work</Button>
+                    <Button href="mailto:guidogennari95@gmail.com" style="outline">
+                        Contact me
+                    </Button>
                 </div>
             </section>
             <section id="work" className="relative pt-[6rem] md:pt-[7rem]">
@@ -49,10 +47,13 @@ export default function Home() {
                     >
                         <div className="p-2 mb-3 lg:w-[26rem] lg:mr-12">
                             <div className="text-xl font-medium mb-2 lg:text-2xl">
-                                Landing Pages
+                                Landing Websites
                             </div>
                             <div className=" text-gray-600 dark:text-gray-400 lg:text-lg">
-                                Modern and SEO optimized pages for business.
+                                Standalone web page designed specifically for a marketing campaign
+                                or specific product/service. The goal is to convert visitors into
+                                customers by providing relevant information and clear
+                                calls-to-action.
                             </div>
                             <div className="flex justify-center md:justify-start my-5 gap-6">
                                 <ReactLogo />
@@ -88,7 +89,7 @@ export default function Home() {
                     >
                         <div className="p-2 mb-3 lg:w-[26rem] lg:mr-12">
                             <div className="text-xl font-medium mb-2 lg:text-2xl">
-                                Full-stack Library App
+                                Full-stack Library Web Application
                             </div>
                             <div className=" text-gray-600 dark:text-gray-400 lg:text-lg">
                                 Build and share your favourites book lists.
