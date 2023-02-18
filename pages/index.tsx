@@ -1,9 +1,10 @@
-import Image from 'next/image';
-import Layout from '../components/layout';
-import clsx from 'clsx';
 import Button from '@ui/Button';
-import { ReactLogo, NextjsLogo, ExpressjsLogo, MongodbLogo } from '@ui/TechLogo';
-import { FaArrowCircleRight, FaExternalLinkAlt, FaArrowRight } from 'react-icons/fa';
+import { ExpressjsLogo, MongodbLogo, NextjsLogo, ReactLogo } from '@ui/TechLogo';
+import clsx from 'clsx';
+import Image from 'next/image';
+import { FaArrowCircleRight, FaArrowRight, FaExternalLinkAlt } from 'react-icons/fa';
+import Typed from 'react-typed';
+import Layout from '../components/layout';
 
 export default function Home() {
     return (
@@ -11,16 +12,34 @@ export default function Home() {
             <section
                 id="hero"
                 className={clsx(
-                    'flex flex-col items-center text-center pt-[6rem] md:pt-[7rem] min-h-screen'
+                    'flex flex-col items-center text-center pt-[6rem] md:pt-[7rem] min-h-screen overflow-hidden'
                 )}
             >
-                <h1 className="font-extrabold text-7xl md:text-8xl lg:text-9xl mb-[2vh]">
-                    Guido Gennari
+                <h1 className="font-mono font-bold text-7xl md:text-8xl lg:text-9xl mb-[3vh] translate-x-4">
+                    Guido.
+                    <Typed
+                        strings={[
+                            'js',
+                            'ts',
+                            'jsx',
+                            'tsx',
+                            'json',
+                            'html',
+                            'css',
+                            'sql',
+                            'py',
+                            'md',
+                            'yml'
+                        ]}
+                        typeSpeed={150}
+                        backSpeed={150}
+                        loop
+                    />
                 </h1>
-                <h2 className="text-gray-900 dark:text-gray-400 md:text-lg lg:text-xl">
+                <h2 className="text-gray-900 dark:text-gray-400 text-lg lg:text-xl">
                     Web developer. Building freelance projects with React ✨
                 </h2>
-                <div className="relative aspect-square w-[12rem] lg:w-[15rem] my-[5vh]">
+                <div className="relative aspect-square w-[12rem] lg:w-[15rem] my-[6vh]">
                     <Image
                         priority
                         src="/images/example1.jpg"

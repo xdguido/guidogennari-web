@@ -1,8 +1,8 @@
-import { useEffect, useState } from 'react';
-import { FaGithub, FaLinkedinIn, FaDiscord } from 'react-icons/fa';
-import ThemeToggler from '@ui/ThemeToggler';
 import Button from '@ui/Button';
+import ThemeToggler from '@ui/ThemeToggler';
 import clsx from 'clsx';
+import { useEffect, useState } from 'react';
+import { FaDiscord, FaGithub, FaLinkedinIn } from 'react-icons/fa';
 
 export default function Header() {
     const [top, setTop] = useState(true);
@@ -23,7 +23,7 @@ export default function Header() {
                     'bg-gray-50 md:bg-opacity-90 md:backdrop-blur-sm border-b border-b-gray-300 dark:bg-black dark:md:bg-opacity-90 dark:border-b-gray-500'
             )}
         >
-            <h1 className="font-neue leading-6 tracking-tight text-xl">
+            <h1 className="font-mono font-semibold leading-6 text-2xl">
                 Guido
                 <br />
                 Gennari
