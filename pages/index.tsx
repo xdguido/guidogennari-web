@@ -15,8 +15,8 @@ export default function Home() {
                     'flex flex-col items-center text-center pt-[6rem] md:pt-[7rem] min-h-screen overflow-hidden'
                 )}
             >
-                <h1 className="font-mono font-bold text-7xl md:text-8xl lg:text-9xl mb-[3vh] translate-x-4">
-                    Guido.
+                <h1 className="font-mono font-bold tracking-tight text-7xl md:text-8xl lg:text-9xl mb-4 translate-x-4">
+                    guido.
                     <Typed
                         strings={[
                             'js',
@@ -36,10 +36,10 @@ export default function Home() {
                         loop
                     />
                 </h1>
-                <h2 className="text-gray-900 dark:text-gray-400 text-lg lg:text-xl">
+                <h2 className="text-gray-900 dark:text-gray-400 text-lg lg:text-xl p-2 sm:p-0">
                     Web developer. Building freelance projects with React ✨
                 </h2>
-                <div className="relative aspect-square w-[12rem] lg:w-[15rem] my-[6vh]">
+                <div className="relative aspect-square w-[13rem] lg:w-[16rem] my-[6vh]">
                     <Image
                         priority
                         src="/images/example1.jpg"
