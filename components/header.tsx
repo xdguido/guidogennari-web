@@ -23,10 +23,8 @@ export default function Header() {
                     'bg-gray-50 md:bg-opacity-90 md:backdrop-blur-sm border-b border-b-gray-300 dark:bg-black dark:md:bg-opacity-90 dark:border-b-gray-500'
             )}
         >
-            <h1 className="font-mono font-semibold leading-6 text-2xl">
-                Guido
-                <br />
-                Gennari
+            <h1 className="font-semibold leading-6 text-xl">
+                GUIDO <span className=" font-light">GENNARI</span>
             </h1>
             <div className="flex">
                 <ul id="socials" className="font-extrabold tracking-tight text-3xl flex">
