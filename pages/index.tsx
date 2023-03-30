@@ -2,7 +2,7 @@ import Button from '@ui/Button';
 import { NextjsLogo, ReactLogo } from '@ui/TechLogo';
 import clsx from 'clsx';
 import Image from 'next/image';
-import { FaArrowRight, FaExternalLinkAlt } from 'react-icons/fa';
+import { FaExternalLinkAlt } from 'react-icons/fa';
 import Typed from 'react-typed';
 import Layout from '../components/layout';
 
@@ -93,7 +93,7 @@ export default function Home() {
                                     colorScheme="gray"
                                     style="outline"
                                 >
-                                    Details <FaArrowRight />
+                                    Details <FaExternalLinkAlt />
                                 </Button>
                             </div>
                         </div>
@@ -143,7 +143,7 @@ export default function Home() {
                                     colorScheme="gray"
                                     style="outline"
                                 >
-                                    Details <FaArrowRight />
+                                    Details <FaExternalLinkAlt />
                                 </Button>
                             </div>
                         </div>

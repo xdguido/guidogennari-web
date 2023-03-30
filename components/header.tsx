@@ -23,7 +23,7 @@ export default function Header() {
                     'bg-gray-50 md:bg-opacity-90 md:backdrop-blur-sm border-b border-b-gray-300 dark:bg-black dark:md:bg-opacity-90 dark:border-b-gray-500'
             )}
         >
-            <h1 className="font-semibold leading-6 text-xl">
+            <h1 className="font-semibold leading-6 text-2xl">
                 GUIDO <span className=" font-light">GENNARI</span>
             </h1>
             <div className="flex">
