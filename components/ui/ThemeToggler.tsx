@@ -1,7 +1,7 @@
 import { useTheme } from 'next-themes';
-import { useState, useEffect } from 'react';
+import { useEffect, useState } from 'react';
+import { FiMoon, FiSun } from 'react-icons/fi';
 import Button from './Button';
-import { FiSun, FiMoon } from 'react-icons/fi';
 
 export default function ThemeToggler() {
     const { theme, setTheme } = useTheme();
@@ -12,7 +12,7 @@ export default function ThemeToggler() {
         <Button
             onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}
             aria-label="Toggle Dark Mode"
-            colorScheme="gray"
+            colorScheme="black"
             style="link"
             square
         >
