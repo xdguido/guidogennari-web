@@ -24,7 +24,9 @@ export default function Header() {
             )}
         >
             <h1 className="font-semibold leading-6 text-2xl">
-                GUIDO <span className=" font-light">GENNARI</span>
+                GUIDO
+                <br />
+                <span className=" font-light">GENNARI</span>
             </h1>
             <div className="flex items-center">
                 <ul id="nav" className="flex sm:gap-3">
