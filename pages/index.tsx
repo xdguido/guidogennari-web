@@ -13,7 +13,7 @@ export default function Home() {
                 className="flex flex-col justify-center items-center text-center  min-h-screen"
             >
                 <div className="mb-10">
-                    {/* <h1 className=" font-mono font-bold tracking-tight text-6xl sm:text-7xl md:text-8xl lg:text-9xl mb-4 translate-x-4">
+                    <h1 className=" font-mono font-bold tracking-tight text-5xl sm:text-7xl md:text-8xl lg:text-9xl mb-4 translate-x-4">
                         guido.
                         <Typed
                             strings={[
@@ -32,8 +32,8 @@ export default function Home() {
                             backSpeed={150}
                             loop
                         />
-                    </h1> */}
-                    <h1 className="text-gray-900 dark:text-gray-400 text-lg lg:text-xl p-2 sm:p-0">
+                    </h1>
+                    <h1 className="text-gray-900 dark:text-gray-400 text-base lg:text-lg p-2 sm:p-0">
                         Freelance web developer. Building with React ✨
                     </h1>
                 </div>
@@ -55,7 +55,7 @@ export default function Home() {
             </section>
             <section id="work" className="relative pt-[6rem] md:pt-[7rem]">
                 <h2 className="text-2xl font-semibold text-blue-600  mb-8">WORK</h2>
-                <div className="flex flex-col gap-10 justify-center items-center">
+                <div className="flex flex-col gap-20 lg:gap-28 justify-center items-center">
                     <div id="project-1" className="grid grid-cols-1 md:grid-cols-3 gap-10">
                         <div className="flex flex-col gap-4">
                             <h3 className="text-xl font-medium lg:text-2xl">

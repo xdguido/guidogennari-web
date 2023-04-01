@@ -28,29 +28,53 @@ export default function Resume() {
                             Experience
                         </h3>
                     </div>
-                    {/* <div className="grid items-baseline gap-x-10 print:grid-cols-4 lg:grid-cols-4">
+                    <div className="grid items-baseline gap-x-10 print:grid-cols-4 lg:grid-cols-4">
                         <div className="print:text-right lg:text-right">
-                            <span className="">Mar 2015 - Mar 2020</span>
+                            <span className="">Mar 2023 - Present</span>
                         </div>
                         <div className="print:col-span-3 lg:col-span-3">
                             <h2 className="mb-2">
-                                <span className="font-semibold">Engineer{"'"}s degree </span>
-                                in agriculture at National University of Comahue
+                                <span className="font-semibold">Freelance developer</span>
                             </h2>
+                        </div>
+                        <div className="text-sm print:text-right lg:text-right">
+                            <span className="">Self-employed</span>
+                        </div>
+                        <div className="print:col-span-3 lg:col-span-3">
                             <p className="sm:text-sm mb-2">
-                                Dropped out at last year. Participated in several field studies
-                                including:
+                                Design and development of an ecommerce website.
                             </p>
                             <ul className="ml-6 sm:text-sm list-disc">
-                                <li className="mb-1">
-                                    Modeling infections of Strawberry in nearby crops
-                                </li>
-                                <li className="mb-1">
-                                    Water Distribution Plan for Cerro Saturnino, Mallin Ahogado
-                                </li>
+                                <li className="mb-1">Modern and responsive sites</li>
+                                <li className="mb-1">Provide SEO optimizations</li>
+                                <li className="mb-1">Provide SEO optimizations</li>
                             </ul>
                         </div>
-                    </div> */}
+                    </div>
+                    <div className="grid items-baseline gap-x-10 print:grid-cols-4 lg:grid-cols-4">
+                        <div className="print:text-right lg:text-right">
+                            <span className="">Feb 2023 - Present</span>
+                        </div>
+                        <div className="print:col-span-3 lg:col-span-3">
+                            <h2 className="mb-2">
+                                <span className="font-semibold">Freelance developer </span>
+                                at UpWork
+                            </h2>
+                        </div>
+                        <div className="text-sm print:text-right lg:text-right">
+                            <span className="">Remote contractor</span>
+                        </div>
+                        <div className="print:col-span-3 lg:col-span-3">
+                            <p className="sm:text-sm mb-2">
+                                Design and development of websites for customers.
+                            </p>
+                            <ul className="ml-6 sm:text-sm list-disc">
+                                <li className="mb-1">Modern and responsive sites</li>
+                                <li className="mb-1">Provide SEO optimizations</li>
+                                <li className="mb-1">Provide SEO optimizations</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
                 <div id="education" className="flex flex-col gap-6 print:gap-4 ">
                     <div className="grid items-baseline print:grid-cols-4 lg:grid-cols-4">
