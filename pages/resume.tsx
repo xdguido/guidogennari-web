@@ -1,8 +1,10 @@
 import Button from '@ui/Button';
 import { FiPrinter } from 'react-icons/fi';
+import { NextSeo } from 'next-seo';
 export default function Resume() {
     return (
         <>
+            <NextSeo title="Guido Gennari | Resume" />
             <section
                 id="resume"
                 className="flex flex-col gap-20 print:gap-6 relative pt-[6rem] md:pt-[7rem] min-h-screen print:pt-8 print:text-black"
