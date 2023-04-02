@@ -26,7 +26,7 @@ export default function Header() {
                     'bg-gray-50 md:bg-opacity-90 md:backdrop-blur-sm border-b border-b-gray-300 dark:bg-black dark:md:bg-opacity-90 dark:border-b-gray-500'
             )}
         >
-            <div className="mx-auto flex flex-1 justify-between max-w-5xl">
+            <div className="mx-auto flex flex-1 justify-between max-w-6xl">
                 <h1 className="font-semibold leading-6 text-2xl">
                     GUIDO
                     <br />

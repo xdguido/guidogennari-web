@@ -43,13 +43,21 @@ export default function Resume() {
                             <span className="">Self-employed</span>
                         </div>
                         <div className="print:col-span-3 lg:col-span-3">
-                            <p className="sm:text-sm mb-2">
-                                Design and development of an ecommerce website.
-                            </p>
+                            {/* <p className="sm:text-sm mb-2"></p> */}
                             <ul className="ml-6 sm:text-sm list-disc">
-                                <li className="mb-1">Modern and responsive sites</li>
-                                <li className="mb-1">Provide SEO optimizations</li>
-                                <li className="mb-1">Provide SEO optimizations</li>
+                                <li className="mb-1">
+                                    Designed and developed an ecommerce website from scratch using
+                                    React, Prisma and PostgreSQL.
+                                </li>
+                                <li className="mb-1">
+                                    Worked closely with the client to understand their requirements,
+                                    and provided recommendations on user experience, design and
+                                    functionality to improve customer engagement and sales.
+                                </li>
+                                <li className="mb-1">
+                                    Integrated Payment and Purchase Order Gateways.
+                                </li>
+                                <li className="mb-1">Optimized the website for search engines</li>
                             </ul>
                         </div>
                     </div>
@@ -67,13 +75,17 @@ export default function Resume() {
                             <span className="">Remote contractor</span>
                         </div>
                         <div className="print:col-span-3 lg:col-span-3">
-                            <p className="sm:text-sm mb-2">
-                                Design and development of websites for customers.
-                            </p>
+                            {/* <p className="sm:text-sm mb-2"></p> */}
                             <ul className="ml-6 sm:text-sm list-disc">
-                                <li className="mb-1">Modern and responsive sites</li>
-                                <li className="mb-1">Provide SEO optimizations</li>
-                                <li className="mb-1">Provide SEO optimizations</li>
+                                <li className="mb-1">
+                                    Developed a portfolio of landing websites for clients on UpWork,
+                                    with a focus on improving conversion rates and lead generation.
+                                </li>
+                                <li className="mb-1">
+                                    Utilized Next.js to build high-quality, responsive landing
+                                    websites that were optimized for search engines and social media
+                                    sharing.
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -83,6 +95,24 @@ export default function Resume() {
                         <h3 className="print:col-start-2 lg:col-start-2 text-2xl font-semibold text-blue-600">
                             Education
                         </h3>
+                    </div>
+                    <div className="grid items-baseline gap-x-10 print:grid-cols-4 lg:grid-cols-4">
+                        <div className="print:text-right lg:text-right">
+                            <span className="">Mar 2023 - Present</span>
+                        </div>
+                        <div className="print:col-span-3 lg:col-span-3">
+                            <h2 className="mb-2 text-lg sm:text-base">
+                                <span className="font-semibold">
+                                    Software development & IT mentoring program
+                                </span>{' '}
+                                at Technology with Purpose Foundation
+                            </h2>
+                            <p className="sm:text-sm mb-2">
+                                This online course aims to build a production application that
+                                provides value to the community and helps participants enter the IT
+                                job market.
+                            </p>
+                        </div>
                     </div>
                     <div className="grid items-baseline gap-x-10 print:grid-cols-4 lg:grid-cols-4">
                         <div className="print:text-right lg:text-right">
@@ -141,9 +171,13 @@ export default function Resume() {
                         </div>
                         <div className="print:col-span-3 lg:col-span-3">
                             <h2 className="mb-2 text-lg sm:text-base">
-                                <span className="font-semibold">First Certificate of English </span>
-                                at University of Cambridge
+                                <span className="font-semibold">English </span>
+                                lessons at SELC english institute
                             </h2>
+                            <p className="sm:text-sm mb-2">
+                                I received a B1 grade on the First Certificate of English exam from
+                                the University of Cambridge.
+                            </p>
                         </div>
                     </div>
                 </div>
