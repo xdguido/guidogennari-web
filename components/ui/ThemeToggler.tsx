@@ -16,6 +16,7 @@ export default function ThemeToggler() {
             style="link"
             square
         >
+            <span className="sr-only">Change theme</span>
             {theme === 'light' ? <FiSun className=" w-5 h-5" /> : <FiMoon className=" w-5 h-5" />}
         </Button>
     );

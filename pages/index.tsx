@@ -1,6 +1,5 @@
 import Button from '@ui/Button';
 import { NextjsLogo, ReactLogo } from '@ui/TechLogo';
-import clsx from 'clsx';
 import Image from 'next/image';
 import { FaExternalLinkAlt } from 'react-icons/fa';
 import Typed from 'react-typed';
