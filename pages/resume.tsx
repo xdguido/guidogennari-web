@@ -250,6 +250,17 @@ export default function Resume() {
                     <div className="grid items-baseline print:grid-cols-4 lg:grid-cols-4">
                         <ul className="list-disc sm:text-sm pl-5 print:col-start-2 lg:col-start-2 print:col-span-3 lg:col-span-3">
                             <li className="mb-1">
+                                Personal Website:{' '}
+                                <a
+                                    className="font-semibold"
+                                    target={'_blank'}
+                                    href="https://www.guidogennari.vercel.app/"
+                                    rel="noreferrer"
+                                >
+                                    guidogennari.vercel.app
+                                </a>
+                            </li>
+                            <li className="mb-1">
                                 LinkedIn:{' '}
                                 <a
                                     className="font-semibold"
