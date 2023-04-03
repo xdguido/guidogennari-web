@@ -71,7 +71,7 @@ export default function Home() {
                             </div>
                             <div className="flex flex-col gap-4">
                                 <Button
-                                    href={'https://nextjs-prisma-ecommerce.vercel.app/'}
+                                    href={'https://nextjs-prisma-ecommerce.vercel.app/products'}
                                     target="_blank"
                                     colorScheme="gray"
                                     style="outline"
