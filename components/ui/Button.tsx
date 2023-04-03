@@ -75,6 +75,7 @@ const buttonStyles = cva(
 );
 
 interface ButtonProps {
+    className?: string;
     href?: string;
     children: React.ReactNode;
     onClick?: () => void;
@@ -86,6 +87,7 @@ interface ButtonProps {
 export interface Props extends ButtonProps, VariantProps<typeof buttonStyles> {}
 
 export default function Button({
+    className,
     colorScheme,
     style,
     fullWidth,
@@ -93,22 +95,31 @@ export default function Button({
     square,
     children,
     onClick,
-    href,
-    ...props
+    href
 }: Props) {
     return href ? (
         <Link
             href={href}
-            className={buttonStyles({ colorScheme, style, fullWidth, uppercase, square })}
-            {...props}
+            className={`${buttonStyles({
+                colorScheme,
+                style,
+                fullWidth,
+                uppercase,
+                square
+            })} ${className}`}
         >
             {children}
         </Link>
     ) : (
         <button
             onClick={onClick}
-            className={buttonStyles({ colorScheme, style, fullWidth, uppercase, square })}
-            {...props}
+            className={`${buttonStyles({
+                colorScheme,
+                style,
+                fullWidth,
+                uppercase,
+                square
+            })} ${className}`}
         >
             {children}
         </button>

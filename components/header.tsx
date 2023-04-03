@@ -1,8 +1,11 @@
+import { Fragment } from 'react';
 import Button from '@ui/Button';
 import ThemeToggler from '@ui/ThemeToggler';
 import clsx from 'clsx';
 import { useEffect, useState } from 'react';
-import { FaDiscord, FaGithub, FaLinkedinIn } from 'react-icons/fa';
+import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
+import { Menu, Transition } from '@headlessui/react';
+import { XMarkIcon, Bars3Icon } from '@heroicons/react/24/outline';
 
 export default function Header() {
     const [top, setTop] = useState(true);
@@ -18,61 +21,165 @@ export default function Header() {
     return (
         <header
             className={clsx(
-                'z-50 fixed inset-x-0 top-0 flex flex-1 items-center justify-between p-4 lg:p-5',
+                ' z-40 fixed inset-x-0 top-0 p-4 lg:p-5 print:hidden',
                 !top &&
                     'bg-gray-50 md:bg-opacity-90 md:backdrop-blur-sm border-b border-b-gray-300 dark:bg-black dark:md:bg-opacity-90 dark:border-b-gray-500'
             )}
         >
-            <h1 className="font-semibold leading-6 text-2xl">
-                GUIDO <span className=" font-light">GENNARI</span>
-            </h1>
-            <div className="flex">
-                <ul id="socials" className="font-extrabold tracking-tight text-3xl flex">
-                    <li>
-                        <Button
-                            colorScheme="black"
-                            style="link"
-                            square
-                            title="GitHub"
-                            target="_blank"
-                            href="https://github.com/xdguido"
-                            rel="noopener noreferrer"
-                        >
-                            <span className="sr-only">GitHub page</span>
-                            <FaGithub className="h-7 w-7" />
+            <div className="mx-auto flex flex-1 justify-between max-w-6xl">
+                <h1 className="font-semibold leading-6 text-2xl">
+                    GUIDO
+                    <br />
+                    <span className=" font-light">GENNARI</span>
+                </h1>
+                <Menu as="div" className=" z-50 block sm:hidden relative text-left">
+                    {({ open, close }) => (
+                        <>
+                            <div className="inline-flex justify-center text-sm">
+                                <Menu.Button className="p-2 group inline-flex justify-center items-center">
+                                    {open ? (
+                                        <XMarkIcon
+                                            className="h-7 w-7 flex-shrink-0 text-base-content"
+                                            aria-hidden="true"
+                                        />
+                                    ) : (
+                                        <Bars3Icon
+                                            className="h-7 w-7 flex-shrink-0 text-base-content"
+                                            aria-hidden="true"
+                                        />
+                                    )}
+                                </Menu.Button>
+                            </div>
+                            <Transition
+                                as={Fragment}
+                                enter="transition ease-out duration-100"
+                                enterFrom="transform opacity-0 scale-95"
+                                enterTo="transform opacity-100 scale-100"
+                                leave="transition ease-in duration-75"
+                                leaveFrom="transform opacity-100 scale-100"
+                                leaveTo="transform opacity-0 scale-95"
+                            >
+                                <Menu.Items className="absolute right-0 mt-2 p-4 w-40 origin-top-right rounded-lg bg-white dark:bg-black border shadow-2xl ring-1 ring-black ring-opacity-5 focus:outline-none">
+                                    <div
+                                        onClick={() => {
+                                            close();
+                                        }}
+                                        className="pb-2 mb-2 border-b border-b-slate-200 dark:border-b-slate-400"
+                                    >
+                                        <Menu.Item>
+                                            <Button
+                                                href={'/#work'}
+                                                colorScheme="black"
+                                                style="link"
+                                                square
+                                            >
+                                                WORK
+                                            </Button>
+                                        </Menu.Item>
+                                        <Menu.Item>
+                                            <Button
+                                                href={'/resume'}
+                                                colorScheme="black"
+                                                style="link"
+                                                square
+                                            >
+                                                RESUME
+                                            </Button>
+                                        </Menu.Item>
+                                    </div>
+                                    <div
+                                        id="socials"
+                                        className="flex justify-center font-extrabold tracking-tight text-3xl  "
+                                    >
+                                        <Menu.Item>
+                                            <Button
+                                                colorScheme="black"
+                                                style="link"
+                                                square
+                                                title="GitHub"
+                                                target="_blank"
+                                                href="https://github.com/xdguido"
+                                                rel="noopener noreferrer"
+                                            >
+                                                <FaGithub className="h-5 w-5" />
+                                            </Button>
+                                        </Menu.Item>
+                                        <Menu.Item>
+                                            <Button
+                                                colorScheme="black"
+                                                style="link"
+                                                square
+                                                title="LinkedIn"
+                                                target="_blank"
+                                                href="https://www.linkedin.com/in/guido-gennari/"
+                                                rel="noopener noreferrer"
+                                            >
+                                                <FaLinkedinIn className="h-5 w-5" />
+                                            </Button>
+                                        </Menu.Item>
+                                        <Menu.Item>
+                                            <ThemeToggler />
+                                        </Menu.Item>
+                                    </div>
+                                </Menu.Items>
+                            </Transition>
+                        </>
+                    )}
+                </Menu>
+                <div className="hidden sm:flex items-center">
+                    <ul id="nav" className="flex sm:gap-3">
+                        <li className="">
+                            <Button href={'/#work'} colorScheme="black" style="link" square>
+                                WORK
+                            </Button>
+                        </li>
+                        <li className="">
+                            <Button href={'/resume'} colorScheme="black" style="link" square>
+                                RESUME
+                            </Button>
+                        </li>
+                        {/* <li className="">
+                        <Button href={'/blog'} colorScheme="black" style="link" square>
+                            BLOG
                         </Button>
-                    </li>
-                    <li>
-                        <Button
-                            colorScheme="black"
-                            style="link"
-                            square
-                            title="Discord"
-                            target="_blank"
-                            href="https://discordapp.com/users/xdguido#4212"
-                            rel="noopener noreferrer"
-                        >
-                            <span className="sr-only">Discord profile</span>
-                            <FaDiscord className="h-7 w-7" />
-                        </Button>
-                    </li>
-                    <li>
-                        <Button
-                            colorScheme="black"
-                            style="link"
-                            square
-                            title="LinkedIn"
-                            target="_blank"
-                            href="https://www.linkedin.com/in/guido-gennari/"
-                            rel="noopener noreferrer"
-                        >
-                            <span className="sr-only">LinkedIn page</span>
-                            <FaLinkedinIn className="h-7 w-7" />
-                        </Button>
-                    </li>
-                </ul>
-                <div className="flex justify-center items-center pl-3 ml-3 sm:pl-5 sm:ml-5 border-l border-l-slate-200 dark:border-l-slate-400">
-                    <ThemeToggler />
+                    </li> */}
+                    </ul>
+                    <ul
+                        id="socials"
+                        className="hidden sm:flex font-extrabold tracking-tight text-3xl  pl-3 ml-3 sm:pl-5 sm:ml-5 border-l border-l-slate-200 dark:border-l-slate-400 "
+                    >
+                        <li>
+                            <Button
+                                colorScheme="black"
+                                style="link"
+                                square
+                                title="GitHub"
+                                target="_blank"
+                                href="https://github.com/xdguido"
+                                rel="noopener noreferrer"
+                            >
+                                <span className="sr-only">GitHub page</span>
+                                <FaGithub className="h-5 w-5" />
+                            </Button>
+                        </li>
+                        <li>
+                            <Button
+                                colorScheme="black"
+                                style="link"
+                                square
+                                title="LinkedIn"
+                                target="_blank"
+                                href="https://www.linkedin.com/in/guido-gennari/"
+                                rel="noopener noreferrer"
+                            >
+                                <span className="sr-only">LinkedIn page</span>
+                                <FaLinkedinIn className="h-5 w-5" />
+                            </Button>
+                        </li>
+                    </ul>
+                    <div className="flex justify-center items-center  ">
+                        <ThemeToggler />
+                    </div>
                 </div>
             </div>
         </header>
