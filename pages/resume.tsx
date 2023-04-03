@@ -254,7 +254,7 @@ export default function Resume() {
                                 <a
                                     className="font-semibold"
                                     target={'_blank'}
-                                    href="https://www.guidogennari.vercel.app/"
+                                    href="https://guidogennari.vercel.app/"
                                     rel="noreferrer"
                                 >
                                     guidogennari.vercel.app
