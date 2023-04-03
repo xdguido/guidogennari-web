@@ -63,7 +63,7 @@ export default function Home() {
                             </h3>
                             <p className=" text-gray-600 dark:text-gray-400 lg:text-lg">
                                 Full-stack application for small business. It allows customers to
-                                navigate through different products categories and create buy
+                                navigate through different products categories and create purchase
                                 orders.
                             </p>
                             <div className="flex justify-start gap-6">

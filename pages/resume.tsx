@@ -7,7 +7,7 @@ export default function Resume() {
             <NextSeo title="Guido Gennari | Resume" />
             <section
                 id="resume"
-                className="flex flex-col gap-20 print:gap-6 relative pt-[6rem] md:pt-[7rem] min-h-screen print:pt-8 print:text-black"
+                className="flex flex-col gap-20 lg:gap-28 print:gap-6 relative pt-[6rem] md:pt-[8rem] lg:pt-[12rem] min-h-screen print:pt-8 print:text-black"
             >
                 <div className="flex flex-col gap-3 print:gap-2">
                     <div className="flex justify-between">
@@ -36,18 +36,30 @@ export default function Resume() {
                         </div>
                         <div className="print:col-span-3 lg:col-span-3">
                             <h2 className="mb-2">
-                                <span className="font-semibold">Freelance developer</span>
+                                <span className="font-semibold">Freelance web developer</span>
                             </h2>
                         </div>
                         <div className="text-sm print:text-right lg:text-right">
                             <span className="">Self-employed</span>
                         </div>
                         <div className="print:col-span-3 lg:col-span-3">
-                            {/* <p className="sm:text-sm mb-2"></p> */}
+                            <p className="sm:text-sm mb-2">
+                                Developing a fully-functional Ecommerce Web Application for a
+                                Furniture Factory. The application will feature an easy-to-use
+                                interface where customers can browse products, add items to their
+                                shopping cart, and complete their purchase securely.
+                            </p>
                             <ul className="ml-6 sm:text-sm list-disc">
                                 <li className="mb-1">
-                                    Designed and developed an ecommerce website from scratch using
-                                    React, Prisma and PostgreSQL.
+                                    Designed and developed an ecommerce Front End using Next.js,
+                                    TailwindCSS and React headless components.
+                                </li>
+                                <li className="mb-1">
+                                    Designed and developed an ecommerce Back End and Data Base using
+                                    Next.js API Routes, Prisma and PosgreSQL.
+                                </li>
+                                <li className="mb-1">
+                                    CI/CD with Vercel, Heroku and GitHub Actions.
                                 </li>
                                 <li className="mb-1">
                                     Worked closely with the client to understand their requirements,
@@ -55,9 +67,11 @@ export default function Resume() {
                                     functionality to improve customer engagement and sales.
                                 </li>
                                 <li className="mb-1">
-                                    Integrated Payment and Purchase Order Gateways.
+                                    Integrated User Authentication and Purchase Order Gateways.
                                 </li>
-                                <li className="mb-1">Optimized the website for search engines</li>
+                                <li className="mb-1">
+                                    Optimized the website for search engines and accessibility
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -67,7 +81,7 @@ export default function Resume() {
                         </div>
                         <div className="print:col-span-3 lg:col-span-3">
                             <h2 className="mb-2">
-                                <span className="font-semibold">Freelance developer </span>
+                                <span className="font-semibold">Freelance web developer </span>
                                 at UpWork
                             </h2>
                         </div>
@@ -107,11 +121,22 @@ export default function Resume() {
                                 </span>{' '}
                                 at Technology with Purpose Foundation
                             </h2>
-                            <p className="sm:text-sm mb-2">
-                                This online course aims to build a production application that
-                                provides value to the community and helps participants enter the IT
-                                job market.
-                            </p>
+                            <p className="sm:text-sm mb-2">This program is designed to:</p>
+                            <ul className="ml-6 sm:text-sm list-disc">
+                                <li className="mb-1">
+                                    Give hands-on experience in building a production web
+                                    application in a team environment.
+                                </li>
+                                <li className="mb-1">
+                                    Learn how to collaborate with others, use industry-standard
+                                    tools and practices, and deliver a working product that provides
+                                    value to the community.
+                                </li>
+                                <li className="mb-1">
+                                    Stand out to potential employers and increase chances of getting
+                                    hired in the IT job market.
+                                </li>
+                            </ul>
                         </div>
                     </div>
                     <div className="grid items-baseline gap-x-10 print:grid-cols-4 lg:grid-cols-4">
@@ -172,7 +197,7 @@ export default function Resume() {
                         <div className="print:col-span-3 lg:col-span-3">
                             <h2 className="mb-2 text-lg sm:text-base">
                                 <span className="font-semibold">English </span>
-                                lessons at SELC english institute
+                                lessons at SELC Language Institute
                             </h2>
                             <p className="sm:text-sm mb-2">
                                 I received a B1 grade on the First Certificate of English exam from
