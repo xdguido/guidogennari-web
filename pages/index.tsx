@@ -61,9 +61,10 @@ export default function Home() {
                                 E-commerce Web Application
                             </h3>
                             <p className=" text-gray-600 dark:text-gray-400 lg:text-lg">
-                                Full-stack application for small business. It allows customers to
-                                navigate through different products categories and create purchase
-                                orders.
+                                Developing a fully-functional E-commerce Web Application for a
+                                Furniture Factory. The application will feature an easy-to-use
+                                interface where customers can browse products, add items to their
+                                shopping cart, and complete their purchase securely.
                             </p>
                             <div className="flex justify-start gap-6">
                                 <ReactLogo />
@@ -100,11 +101,12 @@ export default function Home() {
                     </div>
                     <div id="project-2" className="grid grid-cols-1 md:grid-cols-3 gap-10">
                         <div className="flex flex-col gap-4">
-                            <h3 className="text-xl font-medium lg:text-2xl">Landing Websites</h3>
+                            <h3 className="text-xl font-medium lg:text-2xl">Landing pages</h3>
                             <p className=" text-gray-600 dark:text-gray-400 lg:text-lg">
-                                Standalone web page designed specifically for a marketing campaign
-                                or specific product/service. The goal is to convert visitors into
-                                customers by providing relevant information and clear
+                                Developing websites that are specifically tailored for a marketing
+                                campaign or a particular product or service. The main objective of
+                                this project is to create a website that can convert visitors into
+                                customers by providing them with the necessary information and clear
                                 calls-to-action.
                             </p>
                             <div className="flex justify-start gap-6">

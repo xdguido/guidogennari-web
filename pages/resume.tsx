@@ -44,22 +44,22 @@ export default function Resume() {
                         </div>
                         <div className="print:col-span-3 lg:col-span-3">
                             <p className="sm:text-sm mb-2">
-                                Developing a fully-functional Ecommerce Web Application for a
+                                Developing a fully-functional E-commerce Web Application for a
                                 Furniture Factory. The application will feature an easy-to-use
                                 interface where customers can browse products, add items to their
                                 shopping cart, and complete their purchase securely.
                             </p>
                             <ul className="ml-6 sm:text-sm list-disc">
                                 <li className="mb-1">
-                                    Designed and developed an ecommerce Front End using Next.js,
+                                    Designed and developed an e-commerce Frontend using Next.js,
                                     TailwindCSS and React headless components.
                                 </li>
                                 <li className="mb-1">
-                                    Designed and developed an ecommerce Back End and Data Base using
+                                    Designed and developed an e-commerce Backend and Data Base using
                                     Next.js API Routes, Prisma and PosgreSQL.
                                 </li>
                                 <li className="mb-1">
-                                    CI/CD with Vercel, Heroku and GitHub Actions.
+                                    Deployment with Vercel, Heroku and GitHub Actions.
                                 </li>
                                 <li className="mb-1">
                                     Worked closely with the client to understand their requirements,
@@ -149,7 +149,7 @@ export default function Resume() {
                                 as self-taught student
                             </h2>
                             <p className="sm:text-sm mb-2">
-                                I started studying at open-source academies such as FreeCodeCamp,
+                                I started studying at open-source academies such as freeCodeCamp,
                                 where I learned the basics. I continued with more advanced tutorials
                                 and code challenges, gaining experience in building production-grade
                                 software through this process.
@@ -181,11 +181,11 @@ export default function Resume() {
                             </p>
                             <ul className="ml-6 sm:text-sm list-disc">
                                 <li className="mb-1">
-                                    Modeling infections of Strawberry in nearby crops
+                                    Development of Water Distribution Plan for the inhabitants of
+                                    Cerro Saturnino in Mallin Ahogado, Rio Negro
                                 </li>
                                 <li className="mb-1">
-                                    Development of Water Distribution Plan for citizens at Cerro
-                                    Saturnino, Mallin Ahogado
+                                    Modeling infections of Strawberry in nearby crops
                                 </li>
                             </ul>
                         </div>
@@ -226,7 +226,7 @@ export default function Resume() {
                             </ul>
                             <h2 className="font-bold mb-2">Tools:</h2>
                             <ul className="list-disc sm:text-sm pl-5">
-                                <li className="mb-1">GitHub / GitHub Actions (CI/CD)</li>
+                                <li className="mb-1">GitHub / GitHub Actions</li>
                                 <li className="mb-1">Webpack / Babel</li>
                                 <li className="mb-1">Jest / React Testing Library / Cypress</li>
                                 <li className="mb-1">ESLint / Prettier</li>
