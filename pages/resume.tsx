@@ -218,7 +218,7 @@ export default function Resume() {
                             <ul className="list-disc sm:text-sm pl-5">
                                 <li className="mb-1">JavaScript / TypeScript</li>
                                 <li className="mb-1">React.js / Next.js</li>
-                                <li className="mb-1">Express.js</li>
+                                <li className="mb-1">Node.js / Express.js</li>
                                 <li className="mb-1">Prisma ORM / Mongoose ORM</li>
                                 <li className="mb-1">PostgreSQL / MongoDB</li>
                                 <li className="mb-1">TailwindCSS / Sass / PostCSS</li>
