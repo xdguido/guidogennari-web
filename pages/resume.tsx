@@ -31,20 +31,22 @@ export default function Resume() {
                         </h3>
                     </div>
                     <div className="grid items-baseline print:grid-cols-4 lg:grid-cols-4">
-                        <p className="sm:text-sm print:col-start-2 lg:col-start-2 print:col-span-3 lg:col-span-3">
+                        <p className="sm:text-sm print:col-start-2 lg:col-start-2 print:col-span-3 lg:col-span-3 mb-2">
                             I{"'"}m a <span className="font-semibold">full-stack developer</span>{' '}
                             with expertise in building web sites and web applications. As much as I
                             enjoy the technical aspects of my work, I also value collaboration and
                             teamwork. I{"'"}m currently looking for opportunities to work with a
                             team where I can contribute my skills and work with others to create
-                            <span className="font-semibold"> high-quality products.</span> <br />
+                            <span className="font-semibold"> high-quality products.</span>
+                        </p>
+                        <p className="sm:text-sm print:col-start-2 lg:col-start-2 print:col-span-3 lg:col-span-3 mb-2">
                             My experience includes UI and API development, database management,
                             production code writing and testing. I{"'"}m comfortable working with a
                             variety of programming languages and frameworks, and I{"'"}m always
                             eager to learn new tools and technologies. I{"'"}m passionate about
-                            creating products that are user-friendly, efficient, and scalable, and I
-                            believe that working with a team is the best way to achieve these goals.
-                            <br />
+                            creating products that are user-friendly, efficient, and scalable.
+                        </p>
+                        <p className="sm:text-sm print:col-start-2 lg:col-start-2 print:col-span-3 lg:col-span-3">
                             If you{"'"}re looking for a{' '}
                             <span className="font-semibold">team player</span> who is dedicated to
                             delivering high-quality work, I{"'"}d love to hear from you. Please don
