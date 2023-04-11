@@ -21,12 +21,12 @@ export default function Header() {
     return (
         <header
             className={clsx(
-                ' z-40 fixed inset-x-0 top-0 p-4 lg:p-5 print:hidden',
+                ' z-40 fixed inset-x-0 top-0 print:hidden',
                 !top &&
                     'bg-gray-50 md:bg-opacity-90 md:backdrop-blur-sm border-b border-b-gray-300 dark:bg-black dark:md:bg-opacity-90 dark:border-b-gray-500'
             )}
         >
-            <div className="mx-auto flex flex-1 justify-between max-w-6xl">
+            <div className="mx-auto flex flex-1 justify-between max-w-5xl 2xl:max-w-6xl px-6 py-4 lg:py-5">
                 <h1 className="font-semibold leading-6 text-2xl">
                     GUIDO
                     <br />
