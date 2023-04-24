@@ -33,10 +33,9 @@ export default function Resume() {
                     <div className="grid items-baseline print:grid-cols-4 lg:grid-cols-4">
                         <p className="sm:text-sm print:col-start-2 lg:col-start-2 print:col-span-3 lg:col-span-3 mb-2">
                             I{"'"}m a <span className="font-semibold">full-stack developer</span>{' '}
-                            with expertise in building web sites and web applications. As much as I
-                            enjoy the technical aspects of my work, I also value collaboration and
-                            teamwork. I{"'"}m currently looking for opportunities to work with a
-                            team where I can contribute my skills and work with others to create
+                            with expertise in building web sites and web applications. I{"'"}m
+                            currently looking for opportunities to work with a team where I can
+                            contribute my skills and work with others to create
                             <span className="font-semibold"> high-quality products.</span>
                         </p>
                         <p className="sm:text-sm print:col-start-2 lg:col-start-2 print:col-span-3 lg:col-span-3 mb-2">
