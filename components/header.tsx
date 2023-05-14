@@ -129,12 +129,24 @@ export default function Header() {
                 <div className="hidden sm:flex items-center">
                     <ul id="nav" className="flex sm:gap-3">
                         <li className="">
-                            <Button href={'/#work'} colorScheme="black" style="link" square>
+                            <Button
+                                className="font-normal"
+                                href={'/#work'}
+                                colorScheme="black"
+                                style="link"
+                                square
+                            >
                                 WORK
                             </Button>
                         </li>
                         <li className="">
-                            <Button href={'/resume'} colorScheme="black" style="link" square>
+                            <Button
+                                className="font-normal"
+                                href={'/resume'}
+                                colorScheme="black"
+                                style="link"
+                                square
+                            >
                                 RESUME
                             </Button>
                         </li>

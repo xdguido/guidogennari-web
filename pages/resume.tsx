@@ -25,12 +25,12 @@ export default function Resume() {
                     <h2 className="text-xl">Full-stack web developer</h2>
                 </div>
                 <section id="about" className="flex flex-col gap-6 print:gap-4">
-                    <div className="grid items-baseline print:grid-cols-4 lg:grid-cols-4">
+                    <div className="grid items-baseline gap-x-10 print:grid-cols-4 lg:grid-cols-4">
                         <h3 className="print:col-start-2 lg:col-start-2 text-2xl font-semibold text-blue-600">
                             About
                         </h3>
                     </div>
-                    <div className="grid items-baseline print:grid-cols-4 lg:grid-cols-4">
+                    <div className="grid items-baseline gap-x-10 print:grid-cols-4 lg:grid-cols-4">
                         <p className="sm:text-sm print:col-start-2 lg:col-start-2 print:col-span-3 lg:col-span-3 mb-2">
                             I{"'"}m a <span className="font-semibold">full-stack developer</span>{' '}
                             with expertise in building web sites and web applications. I{"'"}m
@@ -55,22 +55,24 @@ export default function Resume() {
                     </div>
                 </section>
                 <section id="experience" className="flex flex-col gap-6 print:gap-4">
-                    <div className="grid items-baseline print:grid-cols-4 lg:grid-cols-4">
+                    <div className="grid items-baseline gap-x-10 print:grid-cols-4 lg:grid-cols-4">
                         <h3 className="print:col-start-2 lg:col-start-2 text-2xl font-semibold text-blue-600">
                             Experience
                         </h3>
                     </div>
                     <div className="grid items-baseline gap-x-10 print:grid-cols-4 lg:grid-cols-4">
                         <div className="print:text-right lg:text-right">
-                            <span className="">Mar 2023 - Present</span>
+                            <span className="text-sm text-gray-400">Mar 2023 - Present</span>
                         </div>
                         <div className="print:col-span-3 lg:col-span-3">
-                            <h2 className="mb-2">
-                                <span className="font-semibold">Full-stack web developer</span>
+                            <h2 className="mb-2 ">
+                                <span className=" text-lg font-semibold">
+                                    Full-stack web developer
+                                </span>
                             </h2>
                         </div>
                         <div className="text-sm print:text-right lg:text-right">
-                            <span className="">Self-employed</span>
+                            <span className="text-sm text-gray-400">Self-employed</span>
                         </div>
                         <div className="print:col-span-3 lg:col-span-3">
                             <p className="sm:text-sm mb-2">
@@ -107,16 +109,15 @@ export default function Resume() {
                     </div>
                     <div className="grid items-baseline gap-x-10 print:grid-cols-4 lg:grid-cols-4">
                         <div className="print:text-right lg:text-right">
-                            <span className="">Feb 2023 - Present</span>
+                            <span className="text-sm text-gray-400">Feb 2023 - Present</span>
                         </div>
                         <div className="print:col-span-3 lg:col-span-3">
-                            <h2 className="mb-2">
+                            <h2 className="mb-2 ">
                                 <span className="font-semibold">Front-end web developer </span>
-                                at UpWork
                             </h2>
                         </div>
-                        <div className="text-sm print:text-right lg:text-right">
-                            <span className="">Remote contractor</span>
+                        <div className="print:text-right lg:text-right">
+                            <span className="text-sm text-gray-400">Remote contractor</span>
                         </div>
                         <div className="print:col-span-3 lg:col-span-3">
                             {/* <p className="sm:text-sm mb-2"></p> */}
@@ -135,14 +136,14 @@ export default function Resume() {
                     </div>
                 </section>
                 <section id="education" className="flex flex-col gap-6 print:gap-4 ">
-                    <div className="grid items-baseline print:grid-cols-4 lg:grid-cols-4">
+                    <div className="grid items-baseline gap-x-10 print:grid-cols-4 lg:grid-cols-4">
                         <h3 className="print:col-start-2 lg:col-start-2 text-2xl font-semibold text-blue-600">
                             Education
                         </h3>
                     </div>
                     <div className="grid items-baseline gap-x-10 print:grid-cols-4 lg:grid-cols-4">
                         <div className="print:text-right lg:text-right">
-                            <span className="">Mar 2023 - Present</span>
+                            <span className="text-sm text-gray-400">Mar 2023 - Present</span>
                         </div>
                         <div className="print:col-span-3 lg:col-span-3">
                             <h2 className="mb-2 text-lg sm:text-base">
@@ -171,7 +172,7 @@ export default function Resume() {
                     </div>
                     <div className="grid items-baseline gap-x-10 print:grid-cols-4 lg:grid-cols-4">
                         <div className="print:text-right lg:text-right">
-                            <span className="">Dec 2021 - Present</span>
+                            <span className="text-sm text-gray-400">Dec 2021 - Present</span>
                         </div>
                         <div className="print:col-span-3 lg:col-span-3">
                             <h2 className="mb-2 text-lg sm:text-base">
@@ -198,7 +199,7 @@ export default function Resume() {
                     </div>
                     <div className="grid items-baseline gap-x-10 print:grid-cols-4 lg:grid-cols-4">
                         <div className="print:text-right lg:text-right">
-                            <span className="">Mar 2015 - Dic 2020</span>
+                            <span className="text-sm text-gray-400">Mar 2015 - Dic 2020</span>
                         </div>
                         <div className="print:col-span-3 lg:col-span-3">
                             <h2 className="mb-2 text-lg sm:text-base">
@@ -222,7 +223,7 @@ export default function Resume() {
                     </div>
                     <div className="grid items-baseline gap-x-10 print:grid-cols-4 lg:grid-cols-4">
                         <div className="print:text-right lg:text-right">
-                            <span className="">Mar 2011 - Mar 2015</span>
+                            <span className="text-sm text-gray-400">Mar 2011 - Mar 2015</span>
                         </div>
                         <div className="print:col-span-3 lg:col-span-3">
                             <h2 className="mb-2 text-lg sm:text-base">
@@ -237,12 +238,12 @@ export default function Resume() {
                     </div>
                 </section>
                 <section id="stack" className="flex flex-col gap-6 print:gap-4">
-                    <div className="grid items-baseline print:grid-cols-4 lg:grid-cols-4">
+                    <div className="grid items-baseline gap-x-10 print:grid-cols-4 lg:grid-cols-4">
                         <h3 className="print:col-start-2 lg:col-start-2 print:col-span-3 lg:col-span-3 text-2xl font-semibold text-blue-600">
                             Skills and Tech Stack
                         </h3>
                     </div>
-                    <div className="grid items-baseline print:grid-cols-4 lg:grid-cols-4">
+                    <div className="grid items-baseline gap-x-10 print:grid-cols-4 lg:grid-cols-4">
                         <div className="print:col-start-2 lg:col-start-2 print:col-span-3 lg:col-span-3">
                             <h2 className="font-bold mb-2">Tech Stack:</h2>
                             <ul className="ml-5 list-disc sm:text-sm ">
@@ -272,12 +273,12 @@ export default function Resume() {
                     </div>
                 </section>
                 <section id="contact" className="flex flex-col gap-6 print:gap-4">
-                    <div className="grid items-baseline print:grid-cols-4 lg:grid-cols-4">
+                    <div className="grid items-baseline gap-x-10 print:grid-cols-4 lg:grid-cols-4">
                         <h3 className="print:col-start-2 lg:col-start-2 print:col-span-3 lg:col-span-3 text-2xl font-semibold text-blue-600">
                             Contact
                         </h3>
                     </div>
-                    <div className="grid items-baseline print:grid-cols-4 lg:grid-cols-4">
+                    <div className="grid items-baseline gap-x-10 print:grid-cols-4 lg:grid-cols-4">
                         <ul className="ml-5 list-disc sm:text-sm print:col-start-2 lg:col-start-2 print:col-span-3 lg:col-span-3">
                             <li className="mb-1">
                                 Personal Website:{' '}
