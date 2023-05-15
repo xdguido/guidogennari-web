@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import Button from '@ui/Button';
 import { FiPrinter } from 'react-icons/fi';
 import { NextSeo } from 'next-seo';
@@ -32,24 +33,24 @@ export default function Resume() {
                     </div>
                     <div className="grid items-baseline gap-x-10 print:grid-cols-4 lg:grid-cols-4">
                         <p className="sm:text-sm print:col-start-2 lg:col-start-2 print:col-span-3 lg:col-span-3 mb-2">
-                            I{"'"}m a <span className="font-semibold">full-stack developer</span>{' '}
-                            with expertise in building web sites and web applications. I{"'"}m
+                            I{"'"}m a{' '}
+                            <span className="font-semibold">full-stack web developer</span> with
+                            expertise in building web sites and web applications with React. I{"'"}m
                             currently looking for opportunities to work with a team where I can
                             contribute my skills and work with others to create
                             <span className="font-semibold"> high-quality products.</span>
                         </p>
                         <p className="sm:text-sm print:col-start-2 lg:col-start-2 print:col-span-3 lg:col-span-3 mb-2">
                             My experience includes UI and API development, database management,
-                            production code writing and testing. I{"'"}m comfortable working with a
-                            variety of programming languages and frameworks, and I{"'"}m always
-                            eager to learn new tools and technologies. I{"'"}m passionate about
-                            creating products that are user-friendly, efficient, and scalable.
+                            production code writing and testing.
                         </p>
                         <p className="sm:text-sm print:col-start-2 lg:col-start-2 print:col-span-3 lg:col-span-3">
-                            If you{"'"}re looking for a{' '}
-                            <span className="font-semibold">team player</span> who is dedicated to
-                            delivering high-quality work, I{"'"}d love to hear from you. Please don
-                            {"'"}t hesitate to get in touch if you think I could be a good fit for
+                            If you're looking for a team player who is dedicated to delivering code
+                            and adapt to new challenges, I'd love to hear from you. Please don't
+                            hesitate to get in touch if you think I could be a good fit for your
+                            team.If you're looking for a team player who is dedicated to delivering
+                            code and adapt to new challenges, I'd love to hear from you. Please
+                            don't hesitate to get in touch if you think I could be a good fit for
                             your team.
                         </p>
                     </div>
@@ -90,9 +91,7 @@ export default function Resume() {
                                     Designed and developed an e-commerce Backend and Data Base using
                                     Next.js API Routes, Prisma and PosgreSQL.
                                 </li>
-                                <li className="mb-1">
-                                    Deployment with Vercel, Heroku and GitHub Actions.
-                                </li>
+                                <li className="mb-1">Deployment with Vercel and PlanetScale.</li>
                                 <li className="mb-1">
                                     Worked closely with the client to understand their requirements,
                                     and provided recommendations on user experience, design and
@@ -207,7 +206,7 @@ export default function Resume() {
                                 in agriculture at National University of Comahue
                             </h2>
                             <p className="sm:text-sm mb-2">
-                                Dropped out at last year. Participated in several field studies
+                                Dropped out at last year. Participated in several fieldworks
                                 including:
                             </p>
                             <ul className="ml-5  sm:text-sm list-disc">
