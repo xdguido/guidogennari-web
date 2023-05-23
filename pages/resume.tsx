@@ -38,7 +38,7 @@ export default function Resume() {
                             expertise in building web sites and web applications with React. I{"'"}m
                             currently looking for opportunities to work with a team where I can
                             contribute my skills and work with others to create
-                            <span className="font-semibold"> high-quality products.</span>
+                            <span className="font-semibold"> digital products.</span>
                         </p>
                         <p className="sm:text-sm print:col-start-2 lg:col-start-2 print:col-span-3 lg:col-span-3 mb-2">
                             My experience includes UI and API development, database management,
@@ -48,10 +48,7 @@ export default function Resume() {
                             If you're looking for a team player who is dedicated to delivering code
                             and adapt to new challenges, I'd love to hear from you. Please don't
                             hesitate to get in touch if you think I could be a good fit for your
-                            team.If you're looking for a team player who is dedicated to delivering
-                            code and adapt to new challenges, I'd love to hear from you. Please
-                            don't hesitate to get in touch if you think I could be a good fit for
-                            your team.
+                            team.
                         </p>
                     </div>
                 </section>
@@ -64,6 +61,8 @@ export default function Resume() {
                     <div className="grid items-baseline gap-x-10 print:grid-cols-4 lg:grid-cols-4">
                         <div className="print:text-right lg:text-right">
                             <span className="text-sm text-gray-400">Mar 2023 - Present</span>
+                            <br />
+                            <span className="text-sm text-gray-400">Self-employed</span>
                         </div>
                         <div className="print:col-span-3 lg:col-span-3">
                             <h2 className="mb-2 ">
@@ -71,16 +70,11 @@ export default function Resume() {
                                     Full-stack web developer
                                 </span>
                             </h2>
-                        </div>
-                        <div className="text-sm print:text-right lg:text-right">
-                            <span className="text-sm text-gray-400">Self-employed</span>
-                        </div>
-                        <div className="print:col-span-3 lg:col-span-3">
                             <p className="sm:text-sm mb-2">
-                                Developing a fully-functional E-commerce Web Application for a
-                                Furniture Factory. The application will feature an easy-to-use
-                                interface where customers can browse products, add items to their
-                                shopping cart, and complete their purchase securely.
+                                Developing a fully-functional e-commerce web app for a Furniture
+                                Factory. The application will feature an easy-to-use interface where
+                                customers can browse products, add items to their shopping cart, and
+                                complete their purchase securely.
                             </p>
                             <ul className="ml-5  sm:text-sm list-disc">
                                 <li className="mb-1">
@@ -109,17 +103,13 @@ export default function Resume() {
                     <div className="grid items-baseline gap-x-10 print:grid-cols-4 lg:grid-cols-4">
                         <div className="print:text-right lg:text-right">
                             <span className="text-sm text-gray-400">Feb 2023 - Present</span>
+                            <br />
+                            <span className="text-sm text-gray-400">Remote contractor</span>
                         </div>
                         <div className="print:col-span-3 lg:col-span-3">
                             <h2 className="mb-2 ">
                                 <span className="font-semibold">Front-end web developer </span>
                             </h2>
-                        </div>
-                        <div className="print:text-right lg:text-right">
-                            <span className="text-sm text-gray-400">Remote contractor</span>
-                        </div>
-                        <div className="print:col-span-3 lg:col-span-3">
-                            {/* <p className="sm:text-sm mb-2"></p> */}
                             <ul className="ml-5  sm:text-sm list-disc">
                                 <li className="mb-1">
                                     Developed a portfolio of landing websites for clients on UpWork,
@@ -143,6 +133,8 @@ export default function Resume() {
                     <div className="grid items-baseline gap-x-10 print:grid-cols-4 lg:grid-cols-4">
                         <div className="print:text-right lg:text-right">
                             <span className="text-sm text-gray-400">Mar 2023 - Present</span>
+                            <br />
+                            <span className="text-sm text-gray-400">Remote</span>
                         </div>
                         <div className="print:col-span-3 lg:col-span-3">
                             <h2 className="mb-2 text-lg sm:text-base">
@@ -199,6 +191,8 @@ export default function Resume() {
                     <div className="grid items-baseline gap-x-10 print:grid-cols-4 lg:grid-cols-4">
                         <div className="print:text-right lg:text-right">
                             <span className="text-sm text-gray-400">Mar 2015 - Dic 2020</span>
+                            <br />
+                            <span className="text-sm text-gray-400">Neuquén city</span>
                         </div>
                         <div className="print:col-span-3 lg:col-span-3">
                             <h2 className="mb-2 text-lg sm:text-base">
@@ -206,8 +200,7 @@ export default function Resume() {
                                 in agriculture at National University of Comahue
                             </h2>
                             <p className="sm:text-sm mb-2">
-                                Dropped out at last year. Participated in several fieldworks
-                                including:
+                                Unfinished. Participated in several fieldworks including:
                             </p>
                             <ul className="ml-5  sm:text-sm list-disc">
                                 <li className="mb-1">
@@ -223,6 +216,8 @@ export default function Resume() {
                     <div className="grid items-baseline gap-x-10 print:grid-cols-4 lg:grid-cols-4">
                         <div className="print:text-right lg:text-right">
                             <span className="text-sm text-gray-400">Mar 2011 - Mar 2015</span>
+                            <br />
+                            <span className="text-sm text-gray-400">Neuquén city</span>
                         </div>
                         <div className="print:col-span-3 lg:col-span-3">
                             <h2 className="mb-2 text-lg sm:text-base">
