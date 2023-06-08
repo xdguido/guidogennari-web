@@ -1,7 +1,7 @@
 import Button from '@ui/Button';
 import { NextjsLogo, ReactLogo } from '@ui/TechLogo';
 import Image from 'next/image';
-import { FaExternalLinkAlt } from 'react-icons/fa';
+import { FaExternalLinkAlt, FaArrowCircleRight } from 'react-icons/fa';
 import Typed from 'react-typed';
 
 export default function Home() {
@@ -143,11 +143,12 @@ export default function Home() {
                         </div>
                     </div>
 
-                    {/* <div>
-                        <button className="flex items-center gap-3 text-lg font-semibold dark:text-slate-100 text-gray-600 hover:text-blue-600 focus-visible:text-blue-600 active:text-blue-800 p-2 mb-2">
-                            More projects <FaArrowCircleRight className="" />
-                        </button>
-                    </div> */}
+                    <a
+                        href="https://github.com/xdguido"
+                        className="flex items-center gap-3 text-lg font-semibold dark:text-slate-100 text-gray-600 hover:text-blue-600 focus-visible:text-blue-600 active:text-blue-800 p-2 mb-2"
+                    >
+                        More projects <FaArrowCircleRight className="h-4 w-4" />
+                    </a>
                 </div>
             </section>
         </>
