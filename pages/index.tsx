@@ -55,8 +55,8 @@ export default function Home() {
             <section id="work" className="relative pt-[6rem] md:pt-[7rem]">
                 <h2 className="text-2xl font-semibold text-blue-600  mb-8">WORK</h2>
                 <div className="flex flex-col gap-20 lg:gap-28 justify-center items-center">
-                    <div id="project-1" className="grid grid-cols-1 md:grid-cols-3 gap-10">
-                        <div className="flex flex-col gap-4">
+                    <div id="project-1" className="grid grid-cols-1 md:grid-cols-6 gap-10">
+                        <div className="flex flex-col md:col-span-4 gap-4">
                             <h3 className="text-xl font-medium lg:text-2xl">
                                 E-commerce Web Application
                             </h3>
@@ -70,7 +70,7 @@ export default function Home() {
                                 <ReactLogo />
                                 <NextjsLogo />
                             </div>
-                            <div className="flex flex-col gap-4">
+                            <div className="flex flex-col md:flex-row gap-4">
                                 <Button
                                     href={'https://nextjs-prisma-ecommerce.vercel.app/products'}
                                     target="_blank"
@@ -99,8 +99,8 @@ export default function Home() {
                             />
                         </div>
                     </div>
-                    <div id="project-2" className="grid grid-cols-1 md:grid-cols-3 gap-10">
-                        <div className="flex flex-col gap-4">
+                    <div id="project-2" className="grid grid-cols-1 md:grid-cols-6 gap-10">
+                        <div className="flex flex-col md:col-span-4 gap-4">
                             <h3 className="text-xl font-medium lg:text-2xl">Landing pages</h3>
                             <p className=" text-gray-600 dark:text-gray-400 lg:text-lg">
                                 Developing websites that are specifically tailored for a marketing
@@ -113,7 +113,7 @@ export default function Home() {
                                 <ReactLogo />
                                 <NextjsLogo />
                             </div>
-                            <div className="flex flex-col gap-4">
+                            <div className="flex flex-col md:flex-row gap-4">
                                 <Button
                                     href={'https://landing-nextjs-template.vercel.app/'}
                                     target="_blank"
