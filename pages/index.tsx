@@ -1,7 +1,7 @@
 import Button from '@ui/Button';
 import { NextjsLogo, ReactLogo } from '@ui/TechLogo';
 import Image from 'next/image';
-import { FaExternalLinkAlt, FaArrowCircleRight } from 'react-icons/fa';
+import { FaExternalLinkAlt, FaArrowCircleRight, FaGithub } from 'react-icons/fa';
 import Typed from 'react-typed';
 
 export default function Home() {
@@ -33,7 +33,7 @@ export default function Home() {
                         />
                     </h1>
                     <h1 className="text-gray-900 dark:text-gray-400 text-base lg:text-lg p-2 sm:p-0">
-                        Freelance web developer. Building with React ✨
+                        Full-stack web developer. Building with React ✨
                     </h1>
                 </div>
                 {/* <div className="relative aspect-square w-[13rem] lg:w-[16rem] my-[6vh]">
@@ -61,7 +61,7 @@ export default function Home() {
                                 E-commerce Web Application
                             </h3>
                             <p className=" text-gray-600 dark:text-gray-400 lg:text-lg">
-                                Developing a fully-functional E-commerce Web Application for a
+                                Developing a fully-functional E-commerce SPA Web Application for a
                                 Furniture Factory. The application will feature an easy-to-use
                                 interface where customers can browse products, add items to their
                                 shopping cart, and complete their purchase securely.
@@ -85,7 +85,7 @@ export default function Home() {
                                     colorScheme="gray"
                                     style="outline"
                                 >
-                                    Details <FaExternalLinkAlt />
+                                    Code <FaGithub />
                                 </Button>
                             </div>
                         </div>
@@ -128,7 +128,7 @@ export default function Home() {
                                     colorScheme="gray"
                                     style="outline"
                                 >
-                                    Details <FaExternalLinkAlt />
+                                    Code <FaGithub />
                                 </Button>
                             </div>
                         </div>

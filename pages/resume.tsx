@@ -60,7 +60,7 @@ export default function Resume() {
                     </div>
                     <div className="grid items-baseline gap-x-10 print:grid-cols-4 lg:grid-cols-4">
                         <div className="print:text-right lg:text-right">
-                            <span className="text-sm text-gray-400">Mar 2023 - Present</span>
+                            <span className="text-sm text-gray-400">May 2023 - Present</span>
                             <br />
                             <span className="text-sm text-gray-400">Self-employed</span>
                         </div>
@@ -78,12 +78,12 @@ export default function Resume() {
                             </p>
                             <ul className="ml-5  sm:text-sm list-disc">
                                 <li className="mb-1">
-                                    Designed and developed an e-commerce Frontend using Next.js,
-                                    TailwindCSS and React headless components.
+                                    Designed and developed frontend using Next.js, TailwindCSS and
+                                    React headless components.
                                 </li>
                                 <li className="mb-1">
-                                    Designed and developed an e-commerce Backend and Data Base using
-                                    Next.js API Routes, Prisma and PosgreSQL.
+                                    Designed and developed Backend and Data Base using Next.js API
+                                    Routes, Prisma and PosgreSQL.
                                 </li>
                                 <li className="mb-1">Deployment with Vercel and PlanetScale.</li>
                                 <li className="mb-1">
