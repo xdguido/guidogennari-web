@@ -32,19 +32,10 @@ export default function Home() {
                             loop
                         />
                     </h1>
-                    <h1 className="p-2 text-base text-gray-900 dark:text-gray-400 sm:p-0 lg:text-lg">
+                    <h1 className="p-2 text-base text-gray-600 dark:text-gray-400 sm:p-0 lg:text-lg">
                         Full-stack web developer. Building with React ✨
                     </h1>
                 </div>
-                {/* <div className="relative aspect-square w-[13rem] lg:w-[16rem] my-[6vh]">
-                    <Image
-                        priority
-                        src="/images/example1.jpg"
-                        className="rounded-full"
-                        fill
-                        alt="main pic"
-                    />
-                </div> */}
                 <div className="flex gap-4 lg:gap-6 ">
                     <Button href="/#work">Work</Button>
                     <Button href="/resume" styleScheme="outline">

@@ -8,18 +8,18 @@ export default function Resume() {
             <NextSeo title="Guido Gennari | Resume" />
             <div
                 id="resume"
-                className="relative flex min-h-screen flex-col gap-20 pt-[12rem] print:gap-6 print:pt-8 print:text-black md:pt-[8rem] lg:gap-28"
+                className="relative flex min-h-screen flex-col gap-20 pt-[12rem] print:gap-9 print:pt-8 print:text-black md:pt-[8rem] lg:gap-28 lg:pt-[13rem]"
             >
-                <div className="flex flex-col gap-3 print:gap-2">
-                    <div className="items-baseline gap-x-10 print:grid-cols-4 lg:grid lg:grid-cols-4">
-                        <span className="-ml-1 text-right  text-5xl tracking-tighter sm:text-7xl">
+                <div className="flex flex-col gap-3">
+                    <div className="items-baseline gap-x-10 lg:grid lg:grid-cols-4">
+                        <span className="-ml-1 text-right  text-5xl tracking-tighter print:text-7xl sm:text-7xl">
                             GUIDO
                         </span>
-                        <span className="text-5xl font-bold tracking-tighter sm:text-7xl lg:-ml-2">
+                        <span className="text-5xl font-bold tracking-tighter print:text-7xl sm:text-7xl lg:-ml-2">
                             GENNARI
                         </span>
                     </div>
-                    <div className="items-baseline gap-x-10 print:grid print:grid-cols-4 lg:grid lg:grid-cols-4">
+                    <div className="items-baseline gap-x-10 lg:grid lg:grid-cols-4">
                         <h2 className="col-start-2 text-xl tracking-tight text-gray-400">
                             Full-stack web developer
                         </h2>
