@@ -6,7 +6,7 @@ function MyLink({ href, children, ...props }: { href: string; children: React.Re
         <Link
             href={href}
             target="_blank"
-            className="flex justify-center items-center gap-2 text-slate-500"
+            className="flex items-center justify-center gap-2 text-slate-500"
             {...props}
         >
             {children}

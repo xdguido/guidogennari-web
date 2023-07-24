@@ -8,7 +8,7 @@ export default function Resume() {
             <NextSeo title="Guido Gennari | Resume" />
             <div
                 id="resume"
-                className="flex flex-col gap-20 lg:gap-28 print:gap-6 relative pt-[6rem] md:pt-[8rem] lg:pt-[12rem] min-h-screen print:pt-8 print:text-black"
+                className="relative flex min-h-screen flex-col gap-20 pt-[6rem] print:gap-6 print:pt-8 print:text-black md:pt-[8rem] lg:gap-28 lg:pt-[12rem]"
             >
                 <div className="flex flex-col gap-3 print:gap-2">
                     <div className="flex justify-between">
@@ -27,12 +27,12 @@ export default function Resume() {
                 </div>
                 <section id="about" className="flex flex-col gap-6 print:gap-4">
                     <div className="grid items-baseline gap-x-10 print:grid-cols-4 lg:grid-cols-4">
-                        <h3 className="print:col-start-2 lg:col-start-2 text-2xl font-semibold text-blue-600">
+                        <h3 className="text-2xl font-semibold text-blue-600 print:col-start-2 lg:col-start-2">
                             About
                         </h3>
                     </div>
                     <div className="grid items-baseline gap-x-10 print:grid-cols-4 lg:grid-cols-4">
-                        <p className="sm:text-sm print:col-start-2 lg:col-start-2 print:col-span-3 lg:col-span-3 mb-2">
+                        <p className="mb-2 print:col-span-3 print:col-start-2 sm:text-sm lg:col-span-3 lg:col-start-2">
                             I{"'"}m a{' '}
                             <span className="font-semibold">full-stack web developer</span> with
                             expertise in building web sites and web applications with React. I{"'"}m
@@ -40,11 +40,11 @@ export default function Resume() {
                             contribute my skills and work with others to create
                             <span className="font-semibold"> digital products.</span>
                         </p>
-                        <p className="sm:text-sm print:col-start-2 lg:col-start-2 print:col-span-3 lg:col-span-3 mb-2">
+                        <p className="mb-2 print:col-span-3 print:col-start-2 sm:text-sm lg:col-span-3 lg:col-start-2">
                             My experience includes UI and API development, database management,
                             production code writing and testing.
                         </p>
-                        <p className="sm:text-sm print:col-start-2 lg:col-start-2 print:col-span-3 lg:col-span-3">
+                        <p className="print:col-span-3 print:col-start-2 sm:text-sm lg:col-span-3 lg:col-start-2">
                             If you're looking for a team player who is dedicated to delivering code
                             and adapt to new challenges, I'd love to hear from you. Please don't
                             hesitate to get in touch if you think I could be a good fit for your
@@ -54,7 +54,7 @@ export default function Resume() {
                 </section>
                 <section id="experience" className="flex flex-col gap-6 print:gap-4">
                     <div className="grid items-baseline gap-x-10 print:grid-cols-4 lg:grid-cols-4">
-                        <h3 className="print:col-start-2 lg:col-start-2 text-2xl font-semibold text-blue-600">
+                        <h3 className="text-2xl font-semibold text-blue-600 print:col-start-2 lg:col-start-2">
                             Experience
                         </h3>
                     </div>
@@ -70,13 +70,13 @@ export default function Resume() {
                                     Full-stack web developer
                                 </span>
                             </h2>
-                            <p className="sm:text-sm mb-2">
+                            <p className="mb-2 sm:text-sm">
                                 Developing a fully-functional e-commerce web app for a Furniture
                                 Factory. The application will feature an easy-to-use interface where
                                 customers can browse products, add items to their shopping cart, and
                                 complete their purchase securely.
                             </p>
-                            <ul className="ml-5  sm:text-sm list-disc">
+                            <ul className="ml-5  list-disc sm:text-sm">
                                 <li className="mb-1">
                                     Designed and developed frontend using Next.js, TailwindCSS and
                                     React headless components.
@@ -110,7 +110,7 @@ export default function Resume() {
                             <h2 className="mb-2 ">
                                 <span className="font-semibold">Front-end web developer </span>
                             </h2>
-                            <ul className="ml-5  sm:text-sm list-disc">
+                            <ul className="ml-5  list-disc sm:text-sm">
                                 <li className="mb-1">
                                     Developed a portfolio of landing websites for clients on UpWork,
                                     with a focus on improving conversion rates and lead generation.
@@ -126,7 +126,7 @@ export default function Resume() {
                 </section>
                 <section id="education" className="flex flex-col gap-6 print:gap-4 ">
                     <div className="grid items-baseline gap-x-10 print:grid-cols-4 lg:grid-cols-4">
-                        <h3 className="print:col-start-2 lg:col-start-2 text-2xl font-semibold text-blue-600">
+                        <h3 className="text-2xl font-semibold text-blue-600 print:col-start-2 lg:col-start-2">
                             Education
                         </h3>
                     </div>
@@ -143,8 +143,8 @@ export default function Resume() {
                                 </span>{' '}
                                 at Technology with Purpose Foundation
                             </h2>
-                            <p className="sm:text-sm mb-2">This program is designed to:</p>
-                            <ul className="ml-5  sm:text-sm list-disc">
+                            <p className="mb-2 sm:text-sm">This program is designed to:</p>
+                            <ul className="ml-5  list-disc sm:text-sm">
                                 <li className="mb-1">
                                     Give hands-on experience in building a production web
                                     application in a team environment.
@@ -170,13 +170,13 @@ export default function Resume() {
                                 <span className="font-semibold">Software development </span>
                                 as self-taught student
                             </h2>
-                            <p className="sm:text-sm mb-2">
+                            <p className="mb-2 sm:text-sm">
                                 I started studying at open-source academies such as freeCodeCamp,
                                 where I learned the basics. I continued with more advanced tutorials
                                 and code challenges, gaining experience in building production-grade
                                 software through this process.
                             </p>
-                            <ul className="ml-5  sm:text-sm list-disc">
+                            <ul className="ml-5  list-disc sm:text-sm">
                                 <li className="mb-1">
                                     Software development environment and version control
                                 </li>
@@ -199,10 +199,10 @@ export default function Resume() {
                                 <span className="font-semibold">Engineer{"'"}s degree </span>
                                 in agriculture at National University of Comahue
                             </h2>
-                            <p className="sm:text-sm mb-2">
+                            <p className="mb-2 sm:text-sm">
                                 Unfinished. Participated in several fieldworks including:
                             </p>
-                            <ul className="ml-5  sm:text-sm list-disc">
+                            <ul className="ml-5  list-disc sm:text-sm">
                                 <li className="mb-1">
                                     Development of Water Distribution Plan for the inhabitants of
                                     Cerro Saturnino in Mallin Ahogado, Rio Negro
@@ -224,7 +224,7 @@ export default function Resume() {
                                 <span className="font-semibold">English </span>
                                 lessons at SELC Language Institute
                             </h2>
-                            <p className="sm:text-sm mb-2">
+                            <p className="mb-2 sm:text-sm">
                                 I received a B1 grade on the First Certificate of English exam from
                                 the University of Cambridge.
                             </p>
@@ -233,13 +233,13 @@ export default function Resume() {
                 </section>
                 <section id="stack" className="flex flex-col gap-6 print:gap-4">
                     <div className="grid items-baseline gap-x-10 print:grid-cols-4 lg:grid-cols-4">
-                        <h3 className="print:col-start-2 lg:col-start-2 print:col-span-3 lg:col-span-3 text-2xl font-semibold text-blue-600">
+                        <h3 className="text-2xl font-semibold text-blue-600 print:col-span-3 print:col-start-2 lg:col-span-3 lg:col-start-2">
                             Skills and Tech Stack
                         </h3>
                     </div>
                     <div className="grid items-baseline gap-x-10 print:grid-cols-4 lg:grid-cols-4">
-                        <div className="print:col-start-2 lg:col-start-2 print:col-span-3 lg:col-span-3">
-                            <h2 className="font-bold mb-2">Tech Stack:</h2>
+                        <div className="print:col-span-3 print:col-start-2 lg:col-span-3 lg:col-start-2">
+                            <h2 className="mb-2 font-bold">Tech Stack:</h2>
                             <ul className="ml-5 list-disc sm:text-sm ">
                                 <li className="mb-1">JavaScript / TypeScript</li>
                                 <li className="mb-1">React.js / Next.js</li>
@@ -249,14 +249,14 @@ export default function Resume() {
                                 <li className="mb-1">TailwindCSS / Sass / PostCSS</li>
                                 <li className="mb-1">Docker</li>
                             </ul>
-                            <h2 className="font-bold mb-2">Tools:</h2>
+                            <h2 className="mb-2 font-bold">Tools:</h2>
                             <ul className="ml-5 list-disc sm:text-sm ">
                                 <li className="mb-1">GitHub / GitHub Actions</li>
                                 <li className="mb-1">Webpack / Babel</li>
                                 <li className="mb-1">Jest / React Testing Library / Cypress</li>
                                 <li className="mb-1">ESLint / Prettier</li>
                             </ul>
-                            <h2 className="font-bold mb-2">Skills:</h2>
+                            <h2 className="mb-2 font-bold">Skills:</h2>
                             <ul className="ml-5 list-disc sm:text-sm ">
                                 <li className="mb-1">Native Spanish and professional English</li>
                                 <li className="mb-1">Leadership</li>
@@ -268,12 +268,12 @@ export default function Resume() {
                 </section>
                 <section id="contact" className="flex flex-col gap-6 print:gap-4">
                     <div className="grid items-baseline gap-x-10 print:grid-cols-4 lg:grid-cols-4">
-                        <h3 className="print:col-start-2 lg:col-start-2 print:col-span-3 lg:col-span-3 text-2xl font-semibold text-blue-600">
+                        <h3 className="text-2xl font-semibold text-blue-600 print:col-span-3 print:col-start-2 lg:col-span-3 lg:col-start-2">
                             Contact
                         </h3>
                     </div>
                     <div className="grid items-baseline gap-x-10 print:grid-cols-4 lg:grid-cols-4">
-                        <ul className="ml-5 list-disc sm:text-sm print:col-start-2 lg:col-start-2 print:col-span-3 lg:col-span-3">
+                        <ul className="ml-5 list-disc print:col-span-3 print:col-start-2 sm:text-sm lg:col-span-3 lg:col-start-2">
                             <li className="mb-1">
                                 Personal Website:{' '}
                                 <a

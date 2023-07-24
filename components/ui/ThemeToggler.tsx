@@ -17,7 +17,7 @@ export default function ThemeToggler() {
             square
         >
             <span className="sr-only">Change theme</span>
-            {theme === 'light' ? <FiSun className=" w-5 h-5" /> : <FiMoon className=" w-5 h-5" />}
+            {theme === 'light' ? <FiSun className=" h-5 w-5" /> : <FiMoon className=" h-5 w-5" />}
         </Button>
     );
 }

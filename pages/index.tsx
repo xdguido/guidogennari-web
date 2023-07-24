@@ -9,10 +9,10 @@ export default function Home() {
         <>
             <section
                 id="hero"
-                className="flex flex-col justify-center items-center text-center  min-h-screen"
+                className="flex min-h-screen flex-col items-center justify-center  text-center"
             >
                 <div className="mb-10">
-                    <h1 className=" font-mono font-bold tracking-tight text-5xl sm:text-7xl md:text-8xl lg:text-9xl mb-4 translate-x-4">
+                    <h1 className=" mb-4 translate-x-4 font-mono text-5xl font-bold tracking-tight sm:text-7xl md:text-8xl lg:text-9xl">
                         guido.
                         <Typed
                             strings={[
@@ -32,7 +32,7 @@ export default function Home() {
                             loop
                         />
                     </h1>
-                    <h1 className="text-gray-900 dark:text-gray-400 text-base lg:text-lg p-2 sm:p-0">
+                    <h1 className="p-2 text-base text-gray-900 dark:text-gray-400 sm:p-0 lg:text-lg">
                         Full-stack web developer. Building with React ✨
                     </h1>
                 </div>
@@ -53,10 +53,10 @@ export default function Home() {
                 </div>
             </section>
             <section id="work" className="relative pt-[6rem] md:pt-[7rem]">
-                <h2 className="text-2xl font-semibold text-blue-600  mb-8">WORK</h2>
-                <div className="flex flex-col gap-20 lg:gap-28 justify-center items-center">
-                    <div id="project-1" className="grid grid-cols-1 md:grid-cols-6 gap-10">
-                        <div className="flex flex-col md:col-span-4 gap-4">
+                <h2 className="mb-8 text-2xl font-semibold  text-blue-600">WORK</h2>
+                <div className="flex flex-col items-center justify-center gap-20 lg:gap-28">
+                    <div id="project-1" className="grid grid-cols-1 gap-10 md:grid-cols-6">
+                        <div className="flex flex-col gap-4 md:col-span-4">
                             <h3 className="text-xl font-medium lg:text-2xl">
                                 E-commerce Web Application
                             </h3>
@@ -70,7 +70,7 @@ export default function Home() {
                                 <ReactLogo />
                                 <NextjsLogo />
                             </div>
-                            <div className="flex flex-col md:flex-row gap-4">
+                            <div className="flex flex-col gap-4 md:flex-row">
                                 <Button
                                     href={'https://nextjs-prisma-ecommerce.vercel.app/products'}
                                     target="_blank"
@@ -89,9 +89,9 @@ export default function Home() {
                                 </Button>
                             </div>
                         </div>
-                        <div className="md:col-span-2 relative aspect-square">
+                        <div className="relative aspect-square md:col-span-2">
                             <Image
-                                className="object-cover rounded-lg shadow-md"
+                                className="rounded-lg object-cover shadow-md"
                                 src="/images/banner2.png"
                                 alt="Portfolio Image"
                                 fill
@@ -99,8 +99,8 @@ export default function Home() {
                             />
                         </div>
                     </div>
-                    <div id="project-2" className="grid grid-cols-1 md:grid-cols-6 gap-10">
-                        <div className="flex flex-col md:col-span-4 gap-4">
+                    <div id="project-2" className="grid grid-cols-1 gap-10 md:grid-cols-6">
+                        <div className="flex flex-col gap-4 md:col-span-4">
                             <h3 className="text-xl font-medium lg:text-2xl">Landing pages</h3>
                             <p className=" text-gray-600 dark:text-gray-400 lg:text-lg">
                                 Developing websites that are specifically tailored for a marketing
@@ -113,7 +113,7 @@ export default function Home() {
                                 <ReactLogo />
                                 <NextjsLogo />
                             </div>
-                            <div className="flex flex-col md:flex-row gap-4">
+                            <div className="flex flex-col gap-4 md:flex-row">
                                 <Button
                                     href={'https://landing-nextjs-template.vercel.app/'}
                                     target="_blank"
@@ -132,9 +132,9 @@ export default function Home() {
                                 </Button>
                             </div>
                         </div>
-                        <div className="md:col-span-2 relative aspect-square">
+                        <div className="relative aspect-square md:col-span-2">
                             <Image
-                                className="object-cover rounded-lg shadow-md"
+                                className="rounded-lg object-cover shadow-md"
                                 src="/images/banner.png"
                                 alt="Portfolio Image"
                                 fill
@@ -145,7 +145,7 @@ export default function Home() {
 
                     <a
                         href="https://github.com/xdguido"
-                        className="flex items-center gap-3 text-lg font-semibold dark:text-slate-100 text-gray-600 hover:text-blue-600 focus-visible:text-blue-600 active:text-blue-800 p-2 mb-2"
+                        className="mb-2 flex items-center gap-3 p-2 text-lg font-semibold text-gray-600 hover:text-blue-600 focus-visible:text-blue-600 active:text-blue-800 dark:text-slate-100"
                     >
                         More projects <FaArrowCircleRight className="h-4 w-4" />
                     </a>

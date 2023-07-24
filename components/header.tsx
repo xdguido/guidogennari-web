@@ -21,30 +21,30 @@ export default function Header() {
     return (
         <header
             className={clsx(
-                ' z-40 fixed inset-x-0 top-0 print:hidden',
+                ' fixed inset-x-0 top-0 z-40 print:hidden',
                 !top &&
-                    'bg-gray-50 md:bg-opacity-90 md:backdrop-blur-sm border-b border-b-gray-300 dark:bg-black dark:md:bg-opacity-90 dark:border-b-gray-500'
+                    'border-b border-b-gray-300 bg-gray-50 dark:border-b-gray-500 dark:bg-black md:bg-opacity-90 md:backdrop-blur-sm dark:md:bg-opacity-90'
             )}
         >
-            <div className="mx-auto flex flex-1 justify-between max-w-5xl 2xl:max-w-6xl px-6 py-4 lg:py-5">
-                <h1 className="font-semibold leading-6 text-2xl">
+            <div className="mx-auto flex max-w-5xl flex-1 justify-between px-6 py-4 lg:py-5 2xl:max-w-6xl">
+                <h1 className="text-2xl font-semibold leading-6">
                     GUIDO
                     <br />
                     <span className=" font-light">GENNARI</span>
                 </h1>
-                <Menu as="div" className=" z-50 block sm:hidden relative text-left">
+                <Menu as="div" className=" relative z-50 block text-left sm:hidden">
                     {({ open, close }) => (
                         <>
                             <div className="inline-flex justify-center text-sm">
-                                <Menu.Button className="p-2 group inline-flex justify-center items-center">
+                                <Menu.Button className="group inline-flex items-center justify-center p-2">
                                     {open ? (
                                         <XMarkIcon
-                                            className="h-7 w-7 flex-shrink-0 text-base-content"
+                                            className="text-base-content h-7 w-7 flex-shrink-0"
                                             aria-hidden="true"
                                         />
                                     ) : (
                                         <Bars3Icon
-                                            className="h-7 w-7 flex-shrink-0 text-base-content"
+                                            className="text-base-content h-7 w-7 flex-shrink-0"
                                             aria-hidden="true"
                                         />
                                     )}
@@ -59,12 +59,12 @@ export default function Header() {
                                 leaveFrom="transform opacity-100 scale-100"
                                 leaveTo="transform opacity-0 scale-95"
                             >
-                                <Menu.Items className="absolute right-0 mt-2 p-4 w-40 origin-top-right rounded-lg bg-white dark:bg-black border shadow-2xl ring-1 ring-black ring-opacity-5 focus:outline-none">
+                                <Menu.Items className="absolute right-0 mt-2 w-40 origin-top-right rounded-lg border bg-white p-4 shadow-2xl ring-1 ring-black ring-opacity-5 focus:outline-none dark:bg-black">
                                     <div
                                         onClick={() => {
                                             close();
                                         }}
-                                        className="pb-2 mb-2 border-b border-b-slate-200 dark:border-b-slate-400"
+                                        className="mb-2 border-b border-b-slate-200 pb-2 dark:border-b-slate-400"
                                     >
                                         <Menu.Item>
                                             <Button
@@ -89,7 +89,7 @@ export default function Header() {
                                     </div>
                                     <div
                                         id="socials"
-                                        className="flex justify-center font-extrabold tracking-tight text-3xl  "
+                                        className="flex justify-center text-3xl font-extrabold tracking-tight  "
                                     >
                                         <Menu.Item>
                                             <Button
@@ -126,7 +126,7 @@ export default function Header() {
                         </>
                     )}
                 </Menu>
-                <div className="hidden sm:flex items-center">
+                <div className="hidden items-center sm:flex">
                     <ul id="nav" className="flex sm:gap-3">
                         <li className="">
                             <Button
@@ -158,7 +158,7 @@ export default function Header() {
                     </ul>
                     <ul
                         id="socials"
-                        className="hidden sm:flex font-extrabold tracking-tight text-3xl  pl-3 ml-3 sm:pl-5 sm:ml-5 border-l border-l-slate-200 dark:border-l-slate-400 "
+                        className="ml-3 hidden border-l border-l-slate-200 pl-3  text-3xl font-extrabold tracking-tight dark:border-l-slate-400 sm:ml-5 sm:flex sm:pl-5 "
                     >
                         <li>
                             <Button
@@ -189,7 +189,7 @@ export default function Header() {
                             </Button>
                         </li>
                     </ul>
-                    <div className="flex justify-center items-center  ">
+                    <div className="flex items-center justify-center  ">
                         <ThemeToggler />
                     </div>
                 </div>
