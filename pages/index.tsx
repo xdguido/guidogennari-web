@@ -47,7 +47,7 @@ export default function Home() {
                 </div> */}
                 <div className="flex gap-4 lg:gap-6 ">
                     <Button href="/#work">Work</Button>
-                    <Button href="/resume" style="outline">
+                    <Button href="/resume" styleScheme="outline">
                         Resume
                     </Button>
                 </div>
@@ -75,7 +75,7 @@ export default function Home() {
                                     href={'https://nextjs-prisma-ecommerce.vercel.app/products'}
                                     target="_blank"
                                     colorScheme="gray"
-                                    style="outline"
+                                    styleScheme="outline"
                                 >
                                     Live preview <FaExternalLinkAlt />
                                 </Button>
@@ -83,7 +83,7 @@ export default function Home() {
                                     href={'https://github.com/xdguido/nextjs-prisma-ecommerce'}
                                     target="_blank"
                                     colorScheme="gray"
-                                    style="outline"
+                                    styleScheme="outline"
                                 >
                                     Code <FaGithub />
                                 </Button>
@@ -118,7 +118,7 @@ export default function Home() {
                                     href={'https://landing-nextjs-template.vercel.app/'}
                                     target="_blank"
                                     colorScheme="gray"
-                                    style="outline"
+                                    styleScheme="outline"
                                 >
                                     Live preview <FaExternalLinkAlt />
                                 </Button>
@@ -126,7 +126,7 @@ export default function Home() {
                                     href={'https://github.com/xdguido/nextjs-landing-template'}
                                     target="_blank"
                                     colorScheme="gray"
-                                    style="outline"
+                                    styleScheme="outline"
                                 >
                                     Code <FaGithub />
                                 </Button>

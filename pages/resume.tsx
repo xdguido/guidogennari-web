@@ -1,29 +1,38 @@
 /* eslint-disable react/no-unescaped-entities */
 import Button from '@ui/Button';
-import { FiPrinter } from 'react-icons/fi';
 import { NextSeo } from 'next-seo';
+import { PrinterIcon } from '@heroicons/react/24/outline';
 export default function Resume() {
     return (
         <>
             <NextSeo title="Guido Gennari | Resume" />
             <div
                 id="resume"
-                className="relative flex min-h-screen flex-col gap-20 pt-[6rem] print:gap-6 print:pt-8 print:text-black md:pt-[8rem] lg:gap-28 lg:pt-[12rem]"
+                className="relative flex min-h-screen flex-col gap-20 pt-[12rem] print:gap-6 print:pt-8 print:text-black md:pt-[8rem] lg:gap-28"
             >
                 <div className="flex flex-col gap-3 print:gap-2">
-                    <div className="flex justify-between">
-                        <h1 className="text-5xl sm:text-7xl">
-                            <span className="font-bold">GUIDO</span> GENNARI
-                        </h1>
-                        <Button
-                            className="print:hidden"
-                            style="link"
-                            onClick={() => window.print()}
-                        >
-                            Print <FiPrinter />
-                        </Button>
+                    <div className="items-baseline gap-x-10 print:grid-cols-4 lg:grid lg:grid-cols-4">
+                        <span className="-ml-1 text-right  text-5xl tracking-tighter sm:text-7xl">
+                            GUIDO
+                        </span>
+                        <span className="text-5xl font-bold tracking-tighter sm:text-7xl lg:-ml-2">
+                            GENNARI
+                        </span>
                     </div>
-                    <h2 className="text-xl">Full-stack web developer</h2>
+                    <div className="items-baseline gap-x-10 print:grid print:grid-cols-4 lg:grid lg:grid-cols-4">
+                        <h2 className="col-start-2 text-xl tracking-tight text-gray-400">
+                            Full-stack web developer
+                        </h2>
+                        <div className="col-start-4 ml-auto">
+                            <Button
+                                className="ml-auto print:hidden"
+                                styleScheme="link"
+                                onClick={() => window.print()}
+                            >
+                                Print <PrinterIcon className="h-5 w-5" />
+                            </Button>
+                        </div>
+                    </div>
                 </div>
                 <section id="about" className="flex flex-col gap-6 print:gap-4">
                     <div className="grid items-baseline gap-x-10 print:grid-cols-4 lg:grid-cols-4">
@@ -32,7 +41,7 @@ export default function Resume() {
                         </h3>
                     </div>
                     <div className="grid items-baseline gap-x-10 print:grid-cols-4 lg:grid-cols-4">
-                        <p className="mb-2 print:col-span-3 print:col-start-2 sm:text-sm lg:col-span-3 lg:col-start-2">
+                        <p className="mb-2 text-justify print:col-span-3 print:col-start-2 sm:text-sm lg:col-span-3 lg:col-start-2">
                             I{"'"}m a{' '}
                             <span className="font-semibold">full-stack web developer</span> with
                             expertise in building web sites and web applications with React. I{"'"}m
@@ -40,11 +49,7 @@ export default function Resume() {
                             contribute my skills and work with others to create
                             <span className="font-semibold"> digital products.</span>
                         </p>
-                        <p className="mb-2 print:col-span-3 print:col-start-2 sm:text-sm lg:col-span-3 lg:col-start-2">
-                            My experience includes UI and API development, database management,
-                            production code writing and testing.
-                        </p>
-                        <p className="print:col-span-3 print:col-start-2 sm:text-sm lg:col-span-3 lg:col-start-2">
+                        <p className="text-justify print:col-span-3 print:col-start-2 sm:text-sm lg:col-span-3 lg:col-start-2">
                             If you're looking for a team player who is dedicated to delivering code
                             and adapt to new challenges, I'd love to hear from you. Please don't
                             hesitate to get in touch if you think I could be a good fit for your
@@ -70,27 +75,22 @@ export default function Resume() {
                                     Full-stack web developer
                                 </span>
                             </h2>
-                            <p className="mb-2 sm:text-sm">
+                            <p className="mb-2 text-justify sm:text-sm">
                                 Developing a fully-functional e-commerce web app for a Furniture
                                 Factory. The application will feature an easy-to-use interface where
                                 customers can browse products, add items to their shopping cart, and
                                 complete their purchase securely.
                             </p>
-                            <ul className="ml-5  list-disc sm:text-sm">
-                                <li className="mb-1">
+                            <ul className="ml-5 list-disc sm:text-sm">
+                                <li className="mb-1 text-justify">
                                     Designed and developed frontend using Next.js, TailwindCSS and
                                     React headless components.
                                 </li>
-                                <li className="mb-1">
+                                <li className="mb-1 text-justify">
                                     Designed and developed Backend and Data Base using Next.js API
                                     Routes, Prisma and PosgreSQL.
                                 </li>
                                 <li className="mb-1">Deployment with Vercel and PlanetScale.</li>
-                                <li className="mb-1">
-                                    Worked closely with the client to understand their requirements,
-                                    and provided recommendations on user experience, design and
-                                    functionality to improve customer engagement and sales.
-                                </li>
                                 <li className="mb-1">
                                     Integrated User Authentication and Purchase Order Gateways.
                                 </li>
@@ -111,11 +111,11 @@ export default function Resume() {
                                 <span className="font-semibold">Front-end web developer </span>
                             </h2>
                             <ul className="ml-5  list-disc sm:text-sm">
-                                <li className="mb-1">
+                                <li className="mb-1 text-justify">
                                     Developed a portfolio of landing websites for clients on UpWork,
                                     with a focus on improving conversion rates and lead generation.
                                 </li>
-                                <li className="mb-1">
+                                <li className="mb-1 text-justify">
                                     Utilized Next.js to build high-quality, responsive landing
                                     websites that were optimized for search engines and social media
                                     sharing.
@@ -145,16 +145,16 @@ export default function Resume() {
                             </h2>
                             <p className="mb-2 sm:text-sm">This program is designed to:</p>
                             <ul className="ml-5  list-disc sm:text-sm">
-                                <li className="mb-1">
+                                <li className="mb-1 text-justify">
                                     Give hands-on experience in building a production web
                                     application in a team environment.
                                 </li>
-                                <li className="mb-1">
+                                <li className="mb-1 text-justify">
                                     Learn how to collaborate with others, use industry-standard
                                     tools and practices, and deliver a working product that provides
                                     value to the community.
                                 </li>
-                                <li className="mb-1">
+                                <li className="mb-1 text-justify">
                                     Stand out to potential employers and increase chances of getting
                                     hired in the IT job market.
                                 </li>
@@ -170,7 +170,7 @@ export default function Resume() {
                                 <span className="font-semibold">Software development </span>
                                 as self-taught student
                             </h2>
-                            <p className="mb-2 sm:text-sm">
+                            <p className="mb-2 text-justify sm:text-sm">
                                 I started studying at open-source academies such as freeCodeCamp,
                                 where I learned the basics. I continued with more advanced tutorials
                                 and code challenges, gaining experience in building production-grade
@@ -239,26 +239,24 @@ export default function Resume() {
                     </div>
                     <div className="grid items-baseline gap-x-10 print:grid-cols-4 lg:grid-cols-4">
                         <div className="print:col-span-3 print:col-start-2 lg:col-span-3 lg:col-start-2">
-                            <h2 className="mb-2 font-bold">Tech Stack:</h2>
+                            <h2 className="my-2 font-bold">Tech Stack:</h2>
                             <ul className="ml-5 list-disc sm:text-sm ">
                                 <li className="mb-1">JavaScript / TypeScript</li>
                                 <li className="mb-1">React.js / Next.js</li>
                                 <li className="mb-1">Node.js / Express.js</li>
-                                <li className="mb-1">Prisma ORM / Mongoose ORM</li>
-                                <li className="mb-1">PostgreSQL / MongoDB</li>
-                                <li className="mb-1">TailwindCSS / Sass / PostCSS</li>
-                                <li className="mb-1">Docker</li>
+                                <li className="mb-1">Prisma / Mongoose / Sequelize</li>
+                                <li className="mb-1">TailwindCSS / Styled components</li>
                             </ul>
-                            <h2 className="mb-2 font-bold">Tools:</h2>
+                            <h2 className="my-2 font-bold">Tools:</h2>
                             <ul className="ml-5 list-disc sm:text-sm ">
                                 <li className="mb-1">GitHub / GitHub Actions</li>
-                                <li className="mb-1">Webpack / Babel</li>
                                 <li className="mb-1">Jest / React Testing Library / Cypress</li>
                                 <li className="mb-1">ESLint / Prettier</li>
+                                <li className="mb-1">Docker</li>
                             </ul>
-                            <h2 className="mb-2 font-bold">Skills:</h2>
+                            <h2 className="my-2 font-bold">Skills:</h2>
                             <ul className="ml-5 list-disc sm:text-sm ">
-                                <li className="mb-1">Native Spanish and professional English</li>
+                                <li className="mb-1">Native Spanish and advanced English</li>
                                 <li className="mb-1">Leadership</li>
                                 <li className="mb-1">Problem-solving</li>
                                 <li className="mb-1">Attention to detail</li>

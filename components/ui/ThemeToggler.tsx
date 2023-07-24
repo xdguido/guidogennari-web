@@ -13,7 +13,7 @@ export default function ThemeToggler() {
             onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}
             aria-label="Toggle Dark Mode"
             colorScheme="black"
-            style="link"
+            styleScheme="link"
             square
         >
             <span className="sr-only">Change theme</span>

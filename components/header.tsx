@@ -1,4 +1,5 @@
 import { Fragment } from 'react';
+import Link from 'next/link';
 import Button from '@ui/Button';
 import ThemeToggler from '@ui/ThemeToggler';
 import clsx from 'clsx';
@@ -27,10 +28,12 @@ export default function Header() {
             )}
         >
             <div className="mx-auto flex max-w-5xl flex-1 justify-between px-6 py-4 lg:py-5 2xl:max-w-6xl">
-                <h1 className="text-2xl font-semibold leading-6">
-                    GUIDO
-                    <br />
-                    <span className=" font-light">GENNARI</span>
+                <h1 className="text-2xl font-semibold leading-6 tracking-tighter">
+                    <Link href="/">
+                        <span className="font-light">GUIDO</span>
+                        <br />
+                        GENNARI
+                    </Link>
                 </h1>
                 <Menu as="div" className=" relative z-50 block text-left sm:hidden">
                     {({ open, close }) => (
@@ -70,7 +73,7 @@ export default function Header() {
                                             <Button
                                                 href={'/#work'}
                                                 colorScheme="black"
-                                                style="link"
+                                                styleScheme="link"
                                                 square
                                             >
                                                 WORK
@@ -80,7 +83,7 @@ export default function Header() {
                                             <Button
                                                 href={'/resume'}
                                                 colorScheme="black"
-                                                style="link"
+                                                styleScheme="link"
                                                 square
                                             >
                                                 RESUME
@@ -94,7 +97,7 @@ export default function Header() {
                                         <Menu.Item>
                                             <Button
                                                 colorScheme="black"
-                                                style="link"
+                                                styleScheme="link"
                                                 square
                                                 title="GitHub"
                                                 target="_blank"
@@ -107,7 +110,7 @@ export default function Header() {
                                         <Menu.Item>
                                             <Button
                                                 colorScheme="black"
-                                                style="link"
+                                                styleScheme="link"
                                                 square
                                                 title="LinkedIn"
                                                 target="_blank"
@@ -133,7 +136,7 @@ export default function Header() {
                                 className="font-normal"
                                 href={'/#work'}
                                 colorScheme="black"
-                                style="link"
+                                styleScheme="link"
                                 square
                             >
                                 WORK
@@ -144,7 +147,7 @@ export default function Header() {
                                 className="font-normal"
                                 href={'/resume'}
                                 colorScheme="black"
-                                style="link"
+                                styleScheme="link"
                                 square
                             >
                                 RESUME
@@ -163,7 +166,7 @@ export default function Header() {
                         <li>
                             <Button
                                 colorScheme="black"
-                                style="link"
+                                styleScheme="link"
                                 square
                                 title="GitHub"
                                 target="_blank"
@@ -177,7 +180,7 @@ export default function Header() {
                         <li>
                             <Button
                                 colorScheme="black"
-                                style="link"
+                                styleScheme="link"
                                 square
                                 title="LinkedIn"
                                 target="_blank"
