@@ -11,16 +11,16 @@ export default function Resume() {
                 className="relative flex min-h-screen flex-col gap-20 pt-[12rem] print:gap-9 print:pt-8 print:text-black md:pt-[8rem] lg:gap-28 lg:pt-[13rem]"
             >
                 <div className="flex flex-col gap-3">
-                    <div className="items-baseline gap-x-10 lg:grid lg:grid-cols-4">
+                    <h1 className="items-baseline gap-x-10 lg:grid lg:grid-cols-4">
                         <span className="-ml-1 text-right  text-5xl tracking-tighter print:text-7xl sm:text-7xl">
                             GUIDO
                         </span>
                         <span className="text-5xl font-bold tracking-tighter print:text-7xl sm:text-7xl lg:-ml-2">
                             GENNARI
                         </span>
-                    </div>
+                    </h1>
                     <div className="items-baseline gap-x-10 lg:grid lg:grid-cols-4">
-                        <h2 className="col-start-2 text-xl tracking-tight text-gray-400">
+                        <h2 className="col-span-2 col-start-2 text-xl tracking-tight text-gray-400">
                             Full-stack web developer
                         </h2>
                         <div className="col-start-4 ml-auto">
@@ -37,7 +37,7 @@ export default function Resume() {
                 <section id="about" className="flex flex-col gap-6 print:gap-4">
                     <div className="grid items-baseline gap-x-10 print:grid-cols-4 lg:grid-cols-4">
                         <h3 className="text-2xl font-semibold text-blue-600 print:col-start-2 lg:col-start-2">
-                            About
+                            Summary
                         </h3>
                     </div>
                     <div className="grid items-baseline gap-x-10 print:grid-cols-4 lg:grid-cols-4">
@@ -243,8 +243,9 @@ export default function Resume() {
                             <ul className="ml-5 list-disc sm:text-sm ">
                                 <li className="mb-1">JavaScript / TypeScript</li>
                                 <li className="mb-1">React.js / Next.js</li>
+                                <li className="mb-1">TanStack Query / SWR</li>
                                 <li className="mb-1">Node.js / Express.js</li>
-                                <li className="mb-1">Prisma / Mongoose / Sequelize</li>
+                                <li className="mb-1">Prisma / Sequelize / Mongoose</li>
                                 <li className="mb-1">TailwindCSS / Styled components</li>
                             </ul>
                             <h2 className="my-2 font-bold">Tools:</h2>
