@@ -17,7 +17,7 @@ const buttonStyles = cva(
             styleScheme: {
                 solid: ['shadow-md text-gray-50', 'hover:shadow-lg', 'focus-visible:shadow-lg'],
                 outline: ['py-2 border bg-inherit'],
-                link: ['bg-inherit', 'hover:text-blue-600']
+                link: ['bg-inherit', 'hover:text-blue-500']
             },
             fullWidth: { true: 'w-full' },
             uppercase: { true: 'uppercase' },

@@ -22,9 +22,8 @@ export default function Header() {
     return (
         <header
             className={clsx(
-                ' fixed inset-x-0 top-0 z-40 print:hidden',
-                !top &&
-                    'border-b border-b-gray-300 bg-gray-50 dark:border-b-gray-500 dark:bg-black md:bg-opacity-90 md:backdrop-blur-sm dark:md:bg-opacity-90'
+                'fixed inset-x-0 top-0 z-30 backdrop-blur-sm transition-all duration-500 ease-in-out print:hidden',
+                !top && 'bg-gray-50 dark:bg-black md:bg-opacity-80 dark:md:bg-opacity-80'
             )}
         >
             <div className="mx-auto flex max-w-5xl flex-1 justify-between px-6 py-4 lg:py-5 2xl:max-w-6xl">
