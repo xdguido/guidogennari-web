@@ -78,17 +78,24 @@ type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement>;
 
 type LinkProps = React.AnchorHTMLAttributes<HTMLAnchorElement>;
 
-type ButtonAndLinkProps = ButtonProps | LinkProps;
+type ButtonAndLinkProps = ButtonProps & LinkProps;
 
 type Props = ButtonAndLinkProps & VariantProps<typeof buttonStyles>;
 
 export default function Button(props: Props) {
-    const { colorScheme, styleScheme, fullWidth, uppercase, square } = props as VariantProps<
-        typeof buttonStyles
-    >;
+    const {
+        colorScheme,
+        styleScheme,
+        fullWidth,
+        uppercase,
+        square,
+        className,
+        href,
+        children,
+        ...otherProps
+    } = props;
 
     if ('href' in props) {
-        const { className, href, children, ...otherProps } = props as LinkProps;
         return (
             <Link
                 href={href}
@@ -106,7 +113,6 @@ export default function Button(props: Props) {
         );
     }
 
-    const { className, children, ...otherProps } = props as ButtonProps;
     return (
         <button
             className={`${buttonStyles({

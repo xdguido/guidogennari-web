@@ -103,6 +103,7 @@ export default function Home() {
                                 alt="Portfolio Image"
                                 fill
                                 loading="lazy"
+                                sizes="(max-width: 768px) 100vw, 25vw"
                             />
                         </div>
                     </div>
@@ -146,6 +147,7 @@ export default function Home() {
                                 alt="Portfolio Image"
                                 fill
                                 loading="lazy"
+                                sizes="(max-width: 768px) 100vw, 25vw"
                             />
                         </div>
                     </div>
