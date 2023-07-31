@@ -40,14 +40,14 @@ export default function Home() {
                 <h1 className="mb-4 w-[290px] translate-x-4 text-left font-mono text-5xl font-bold tracking-tight sm:w-[340px] sm:text-7xl md:mb-6 md:w-[480px] md:text-8xl 2xl:w-[620px] 2xl:text-9xl">
                     guido.
                     <Typed
-                        strings={['ts', 'js', 'tsx', 'json', 'html', 'css']}
+                        strings={['ts', 'js', 'tsx', 'json', 'html', 'css', 'yml']}
                         typeSpeed={150}
                         backSpeed={150}
                         loop
                     />
                 </h1>
-                <h1 className="mb-6 p-2 text-base text-gray-600 dark:text-gray-400 sm:p-0 md:mb-8 lg:text-lg">
-                    Full-stack web developer. Building with React ✨
+                <h1 className="z-10 mb-6 flex flex-wrap justify-center gap-2 p-2 text-base text-gray-600 dark:text-gray-400 sm:p-0 md:mb-8 lg:text-lg">
+                    Full-stack web developer.<span>Building with React ✨</span>
                 </h1>
 
                 <div className="z-10 flex gap-4 lg:gap-6 ">
