@@ -13,7 +13,7 @@ export default function Header() {
     // detect whether user has scrolled the page down by 10px
     useEffect(() => {
         const scrollHandler = () => {
-            window.pageYOffset > 10 ? setTop(false) : setTop(true);
+            window.scrollY > 20 ? setTop(false) : setTop(true);
         };
         window.addEventListener('scroll', scrollHandler);
         return () => window.removeEventListener('scroll', scrollHandler);
@@ -23,7 +23,7 @@ export default function Header() {
         <header
             className={clsx(
                 'fixed inset-x-0 top-0 z-30 backdrop-blur-sm transition-all duration-500 ease-in-out print:hidden',
-                !top && 'bg-gray-50 dark:bg-black md:bg-opacity-80 dark:md:bg-opacity-80'
+                !top && 'bg-slate-50 bg-opacity-80 dark:bg-black dark:bg-opacity-80'
             )}
         >
             <div className="mx-auto flex max-w-5xl flex-1 justify-between px-6 py-4 lg:py-5 2xl:max-w-6xl">

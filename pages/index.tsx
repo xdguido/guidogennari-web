@@ -37,7 +37,7 @@ export default function Home() {
                 id="hero"
                 className="z-10 flex min-h-screen flex-col items-center justify-center  text-center"
             >
-                <h1 className=" mb-4 translate-x-4 font-mono text-5xl font-bold tracking-tight sm:text-7xl md:mb-6 md:text-8xl xl:text-9xl">
+                <h1 className=" mb-4 translate-x-4 font-mono text-5xl font-bold tracking-tight sm:text-7xl md:mb-6 md:text-8xl 2xl:text-9xl">
                     guido.
                     <Typed
                         strings={['js', 'ts', 'jsx', 'tsx', 'json', 'html', 'css', 'sql']}
