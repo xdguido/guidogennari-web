@@ -40,7 +40,7 @@ export default function Home() {
                 <h1 className="mb-4 w-[290px] translate-x-4 text-left font-mono text-5xl font-bold tracking-tight sm:w-[340px] sm:text-7xl md:mb-6 md:w-[480px] md:text-8xl 2xl:w-[620px] 2xl:text-9xl">
                     guido.
                     <Typed
-                        strings={['js', 'ts', 'tsx', 'json', 'html', 'css', 'sql']}
+                        strings={['ts', 'js', 'tsx', 'json', 'html', 'css']}
                         typeSpeed={150}
                         backSpeed={150}
                         loop
