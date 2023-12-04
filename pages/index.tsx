@@ -47,7 +47,7 @@ export default function Home() {
                     />
                 </h1>
                 <h1 className="z-10 mb-6 flex flex-wrap justify-center gap-2 p-2 text-base text-gray-600 dark:text-gray-400 sm:p-0 md:mb-8 lg:text-lg">
-                    Full-stack web developer.<span>Building with React ✨</span>
+                    Frontend web developer.<span>Building with React ✨</span>
                 </h1>
 
                 <div className="z-10 flex gap-4 lg:gap-6 ">
@@ -66,10 +66,9 @@ export default function Home() {
                                 E-commerce Web Application
                             </h3>
                             <p className=" text-gray-600 dark:text-gray-400 lg:text-lg">
-                                Developing a fully-functional E-commerce SPA Web Application for a
-                                Furniture Factory. The application will feature an easy-to-use
-                                interface where customers can browse products, add items to their
-                                shopping cart, and complete their purchase securely.
+                                Developing a E-commerce Application. The application will feature an
+                                easy-to-use interface where customers can browse products, add items
+                                to their shopping cart, and complete their purchase securely.
                             </p>
                             <div className="flex justify-start gap-6">
                                 <ReactLogo />
@@ -112,10 +111,7 @@ export default function Home() {
                             <h3 className="text-xl font-medium lg:text-2xl">Landing pages</h3>
                             <p className=" text-gray-600 dark:text-gray-400 lg:text-lg">
                                 Developing websites that are specifically tailored for a marketing
-                                campaign or a particular product or service. The main objective of
-                                this project is to create a website that can convert visitors into
-                                customers by providing them with the necessary information and clear
-                                calls-to-action.
+                                campaign or a particular product or service.
                             </p>
                             <div className="flex justify-start gap-6">
                                 <ReactLogo />
