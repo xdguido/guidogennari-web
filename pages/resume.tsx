@@ -8,11 +8,16 @@ export default function Resume() {
   return (
     <>
       <NextSeo title="Guido Gennari | Resume" />
-      <div className="pt-[5rem] print:pt-0">
-        <Button className="ml-auto print:hidden" styleScheme="link" onClick={() => window.print()}>
-          Print <PrinterIcon className="h-5 w-5" />
+      <div className="relative mt-20 max-w-[8.3in] print:mt-0">
+        <Button
+          className="absolute right-0 top-4 z-10 print:hidden"
+          styleScheme="link"
+          onClick={() => window.print()}
+        >
+          <span className="sr-only">print</span>
+          <PrinterIcon className="h-5 w-5" />
         </Button>
-        <div id="resume" className="relative flex flex-col gap-8 p-6 text-sm print:text-black">
+        <div id="resume" className="relative flex flex-col  gap-8 p-6 text-sm print:text-black">
           <h1 className="text-5xl font-bold">
             Hi,
             <br /> I{"'"}m Guido Gennari.
