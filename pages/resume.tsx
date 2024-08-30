@@ -12,28 +12,20 @@ export default function Resume() {
         <Button className="ml-auto print:hidden" styleScheme="link" onClick={() => window.print()}>
           Print <PrinterIcon className="h-5 w-5" />
         </Button>
-        <div
-          id="resume"
-          className="relative flex flex-col gap-8 p-6 text-sm print:text-black"
-          style={{
-            // A4 size
-            width: '8.27in',
-            height: '11.69in'
-          }}
-        >
+        <div id="resume" className="relative flex flex-col gap-8 p-6 text-sm print:text-black">
           <h1 className="text-5xl font-bold">
             Hi,
             <br /> I{"'"}m Guido Gennari.
           </h1>
           <p className="text-xl tracking-tight text-gray-400">Frontend developer</p>
           <section id="about" className="flex flex-col">
-            <p className="text-justify ">
+            <p>
               I{"'"}m a frontend web developer with strong knowledge of backend. I have expertise in
               building web sites and full stack web applications, currently working with React.
               Focusing on UI dev, web perf and accessibility.
             </p>
           </section>
-          <div className="flex flex-row gap-8">
+          <div className="flex flex-col-reverse gap-2 sm:flex-row sm:gap-8">
             <div className="basis-1/3">
               <section id="stack" className="mb-4 flex flex-col gap-2">
                 <h2 className="text-xl font-semibold text-blue-600">Skills</h2>
