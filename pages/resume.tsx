@@ -2,6 +2,7 @@
 import Button from '@ui/Button';
 import { NextSeo } from 'next-seo';
 import { PrinterIcon } from '@heroicons/react/24/outline';
+import { FiLinkedin, FiMail, FiMapPin } from 'react-icons/fi';
 
 export default function Resume() {
   return (
@@ -28,8 +29,8 @@ export default function Resume() {
           <section id="about" className="flex flex-col">
             <p className="text-justify ">
               I{"'"}m a frontend web developer with strong knowledge of backend. I have expertise in
-              building web sites and web applications, currently working with React. Focusing on UI
-              dev, web perf and accessibility.
+              building web sites and full stack web applications, currently working with React.
+              Focusing on UI dev, web perf and accessibility.
             </p>
           </section>
           <div className="flex flex-row gap-8">
@@ -173,10 +174,31 @@ export default function Resume() {
               </section>
               <section id="contact" className="mb-4 flex flex-col gap-2 ">
                 <h2 className="text-xl font-semibold text-blue-600">Contact</h2>
-                <ul className="ml-5 list-disc ">
-                  <li className="mb-1">
+                <ul className="list-none space-y-2">
+                  <li className="flex items-center gap-2">
+                    <FiMail className="h-5 w-5" />
                     <a href="mailto:" target="_blank" rel="noopener noreferrer">
                       guidogennari95@gmail.com
+                    </a>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <FiLinkedin className="h-5 w-5" />
+                    <a
+                      href="https://www.linkedin.com/in/guido-gennari/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      linkedin/guido-gennari
+                    </a>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <FiMapPin className="h-5 w-5" />
+                    <a
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="https://www.google.com/maps/place/Neuquen,+Neuqu%C3%A9n+Province/@-38.941072,-68.1979739,19449m/data=!3m2!1e3!4b1!4m6!3m5!1s0x960a33ba35eb8e35:0x6220acb810e3e2f5!8m2!3d-38.9516784!4d-68.0591888!16zL20vMDJ0YmZn?entry=ttu&g_ep=EgoyMDI0MDgyNy4wIKXMDSoASAFQAw%3D%3D"
+                    >
+                      Neuquen (city), Argentina
                     </a>
                   </li>
                 </ul>
