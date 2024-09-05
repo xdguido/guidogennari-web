@@ -27,7 +27,7 @@ export default function Home() {
           ></div>
         </div>
       </div>
-      <section className="relative z-10 w-full max-w-[8.3in] space-y-8 rounded-md bg-slate-50 p-8 text-sm leading-5 dark:bg-black sm:border sm:border-gray-500 sm:p-16 sm:shadow-md">
+      <section className="relative z-10 w-full space-y-8 rounded-md bg-slate-50 p-8 text-sm leading-5 dark:bg-black sm:border sm:border-gray-500 sm:p-16 sm:shadow-md">
         <h1 className="text-2xl font-bold">About</h1>
         <p>
           Hi! I&apos;m a web developer based in Argentina. Recently I joined ClimateScience as a

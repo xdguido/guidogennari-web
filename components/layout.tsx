@@ -15,7 +15,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       className={`flex min-h-screen flex-col bg-slate-50 dark:bg-black dark:text-gray-100 ${inter.variable} font-sans`}
     >
       <Header />
-      <main className="mx-auto">{children}</main>
+      <main className="mx-auto max-w-[8.3in]">{children}</main>
     </div>
   );
 }
