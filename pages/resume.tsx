@@ -1,5 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
-import Button from '@ui/Button';
+import { Button } from '@ui/Button';
 import { NextSeo } from 'next-seo';
 import { PrinterIcon } from '@heroicons/react/24/outline';
 import { FiLinkedin, FiMail, FiMapPin } from 'react-icons/fi';
@@ -11,7 +11,7 @@ export default function Resume() {
       <div className="relative mt-20 print:mt-0">
         <Button
           className="absolute right-0 top-4 z-10 print:hidden"
-          styleScheme="link"
+          variant="link"
           onClick={() => window.print()}
         >
           <span className="sr-only">print</span>
@@ -33,7 +33,7 @@ export default function Resume() {
           <div className="flex flex-col-reverse gap-2 sm:flex-row sm:gap-8">
             <div className="basis-1/3">
               <section id="stack" className="mb-4 flex flex-col gap-2">
-                <h2 className="text-xl font-semibold text-blue-600">Skills</h2>
+                <h2 className="text-xl font-semibold text-accent-foreground">Skills</h2>
                 <p className="my-2 font-bold">Tech Stack:</p>
                 <ul className="ml-5 list-disc ">
                   <li className="mb-1">
@@ -161,7 +161,7 @@ export default function Resume() {
                 </ul>
               </section>
               <section id="soft-skills" className="mb-4 flex flex-col gap-2 ">
-                <h2 className="text-xl font-semibold text-blue-600    ">Soft Skills</h2>
+                <h2 className="text-xl font-semibold text-accent-foreground    ">Soft Skills</h2>
                 <ul className="ml-5 list-disc">
                   <li className="mb-1">Self-taught</li>
                   <li className="mb-1">Problem solving</li>
@@ -170,7 +170,7 @@ export default function Resume() {
                 </ul>
               </section>
               <section id="contact" className="mb-4 flex flex-col gap-2 ">
-                <h2 className="text-xl font-semibold text-blue-600">Contact</h2>
+                <h2 className="text-xl font-semibold text-accent-foreground">Contact</h2>
                 <ul className="list-none space-y-2">
                   <li className="flex items-center gap-2">
                     <FiMail className="h-5 w-5" />
@@ -203,7 +203,7 @@ export default function Resume() {
             </div>
             <div className="basis-2/3">
               <section id="experience" className="mb-4 flex flex-col gap-2 ">
-                <h2 className="text-xl font-semibold text-blue-600  ">Experience</h2>
+                <h2 className="text-xl font-semibold text-accent-foreground  ">Experience</h2>
                 <span className="text-gray-400">Aug 2023 - Present | London - UK | Remote</span>
                 <p className="">
                   <span className="font-semibold">Frontend developer at ClimateScience.</span>
@@ -216,7 +216,7 @@ export default function Resume() {
                 </p>
               </section>
               <section id="courses" className="mb-4 flex flex-col gap-2 ">
-                <h2 className="text-xl font-semibold text-blue-600">Courses</h2>
+                <h2 className="text-xl font-semibold text-accent-foreground">Courses</h2>
                 <span className="text-gray-400">2023 | Cordoba - Argentina | Remote</span>
                 <p className="">
                   <span className="font-semibold">Software development</span> at Technology with
@@ -228,7 +228,7 @@ export default function Resume() {
                 </p>
               </section>
               <section id="education" className="mb-4 flex flex-col gap-2 ">
-                <h2 className="text-xl font-semibold text-blue-600  ">Education</h2>
+                <h2 className="text-xl font-semibold text-accent-foreground  ">Education</h2>
                 <span className="text-gray-400">2014 - 2019 | Neuquen - Argentina</span>
                 <p className="">
                   <span className="font-semibold">Engineering</span> at National University of
@@ -240,13 +240,11 @@ export default function Resume() {
                 </p>
               </section>
               <section id="languages" className="mb-4 flex flex-col gap-2 ">
-                <h2 className="text-xl font-semibold text-blue-600  ">Languages</h2>
-                <p>
-                  <ul className="ml-5  list-disc">
-                    <li className="mb-1">Spanish (native)</li>
-                    <li className="mb-1">English</li>
-                  </ul>
-                </p>
+                <h2 className="text-xl font-semibold text-accent-foreground  ">Languages</h2>
+                <ul className="ml-5  list-disc">
+                  <li className="mb-1">Spanish (native)</li>
+                  <li className="mb-1">English</li>
+                </ul>
               </section>
             </div>
           </div>

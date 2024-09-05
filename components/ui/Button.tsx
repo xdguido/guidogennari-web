@@ -1,130 +1,50 @@
+import * as React from 'react';
+import { Slot } from '@radix-ui/react-slot';
 import { cva, type VariantProps } from 'class-variance-authority';
-import Link from 'next/link';
 
-const buttonStyles = cva(
-    [
-        'flex items-center justify-center gap-2 px-6 py-2.5 font-medium leading-tight rounded-md',
-        'focus:outline-none focus-visible:ring-offset-2 focus-visible:ring-2',
-        'transition duration-150 ease-in-out'
-    ],
-    {
-        variants: {
-            colorScheme: {
-                blue: ['text-blue-600'],
-                gray: ['text-gray-500'],
-                black: ['text-inherit']
-            },
-            styleScheme: {
-                solid: ['shadow-md text-gray-50', 'hover:shadow-lg', 'focus-visible:shadow-lg'],
-                outline: ['py-2 border bg-inherit'],
-                link: ['bg-inherit', 'hover:text-blue-500']
-            },
-            fullWidth: { true: 'w-full' },
-            uppercase: { true: 'uppercase' },
-            square: { true: 'px-2.5' }
-        },
-        defaultVariants: {
-            colorScheme: 'blue',
-            styleScheme: 'solid'
-        },
-        compoundVariants: [
-            {
-                colorScheme: 'blue',
-                styleScheme: 'solid',
-                class: ['bg-blue-600', 'hover:bg-blue-500 ', 'focus-visible:bg-blue-500']
-            },
-            {
-                colorScheme: 'blue',
-                styleScheme: 'outline',
-                class: [
-                    'border-blue-600 text-blue-600',
-                    'hover:border-blue-500 hover:text-blue-500',
-                    'focus-visible:border-blue-500 focus-visible:text-blue-500'
-                ]
-            },
-            {
-                colorScheme: 'gray',
-                styleScheme: 'solid',
-                class: ['bg-gray-500', 'hover:bg-gray-400 ', 'focus-visible:bg-gray-500']
-            },
-            {
-                colorScheme: 'gray',
-                styleScheme: 'outline',
-                class: [
-                    'border-gray-500 text-gray-500',
-                    'hover:border-gray-400 hover:text-gray-400',
-                    'focus-visible:border-gray-400 focus-visible:text-gray-400'
-                ]
-            },
-            {
-                colorScheme: 'black',
-                styleScheme: 'solid',
-                class: ['bg-black', 'hover:bg-blue-500 ', 'focus-visible:bg-blue-500']
-            },
-            {
-                colorScheme: 'black',
-                styleScheme: 'outline',
-                class: [
-                    'border-black text-black',
-                    'hover:border-blue-500 hover:text-blue-500',
-                    'focus-visible:border-blue-500 focus-visible:text-blue-500'
-                ]
-            }
-        ]
+import { cn } from '../../lib/utils';
+
+const buttonVariants = cva(
+  'inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50',
+  {
+    variants: {
+      variant: {
+        default: 'bg-primary text-primary-foreground shadow hover:bg-primary/90',
+        destructive: 'bg-destructive text-destructive-foreground shadow-sm hover:bg-destructive/90',
+        outline:
+          'border border-input bg-background shadow-sm hover:bg-accent hover:text-accent-foreground',
+        secondary: 'bg-secondary text-secondary-foreground shadow-sm hover:bg-secondary/80',
+        ghost: 'hover:bg-accent hover:text-accent-foreground',
+        link: 'text-primary underline-offset-4 hover:underline'
+      },
+      size: {
+        default: 'h-9 px-4 py-2',
+        sm: 'h-8 rounded-md px-3 text-xs',
+        lg: 'h-10 rounded-md px-8',
+        icon: 'h-9 w-9'
+      }
+    },
+    defaultVariants: {
+      variant: 'default',
+      size: 'default'
     }
+  }
 );
 
-type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement>;
-
-type LinkProps = React.AnchorHTMLAttributes<HTMLAnchorElement>;
-
-type ButtonAndLinkProps = ButtonProps & LinkProps;
-
-type Props = ButtonAndLinkProps & VariantProps<typeof buttonStyles>;
-
-export default function Button(props: Props) {
-    const {
-        colorScheme,
-        styleScheme,
-        fullWidth,
-        uppercase,
-        square,
-        className,
-        href,
-        children,
-        ...otherProps
-    } = props;
-
-    if ('href' in props) {
-        return (
-            <Link
-                href={href}
-                className={`${buttonStyles({
-                    colorScheme,
-                    styleScheme,
-                    fullWidth,
-                    uppercase,
-                    square
-                })} ${className}`}
-                {...otherProps}
-            >
-                {children}
-            </Link>
-        );
-    }
-
-    return (
-        <button
-            className={`${buttonStyles({
-                colorScheme,
-                styleScheme,
-                fullWidth,
-                uppercase,
-                square
-            })} ${className}`}
-            {...otherProps}
-        >
-            {children}
-        </button>
-    );
+export interface ButtonProps
+  extends React.ButtonHTMLAttributes<HTMLButtonElement>,
+    VariantProps<typeof buttonVariants> {
+  asChild?: boolean;
 }
+
+const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
+  ({ className, variant, size, asChild = false, ...props }, ref) => {
+    const Comp = asChild ? Slot : 'button';
+    return (
+      <Comp className={cn(buttonVariants({ variant, size, className }))} ref={ref} {...props} />
+    );
+  }
+);
+Button.displayName = 'Button';
+
+export { Button, buttonVariants };

@@ -1,3 +1,5 @@
+import NavLink from '@ui/NavLink';
+
 export default function Home() {
   return (
     <>
@@ -45,46 +47,18 @@ export default function Home() {
           social media profiles.
         </p>
         <div className="w-full border-b border-b-gray-500">{/* separator */}</div>
-        <ul className="flex gap-4">
+        <ul className="flex">
           <li>
-            <a
-              className="underline hover:text-blue-600"
-              href="https://www.instagram.com/gennariguido/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Instagram
-            </a>
+            <NavLink href="https://www.instagram.com/gennariguido/">Instagram</NavLink>
           </li>
           <li>
-            <a
-              className="underline hover:text-blue-600"
-              href="https://www.linkedin.com/in/guido-gennari/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Linkedin
-            </a>
+            <NavLink href="https://www.linkedin.com/in/guido-gennari/">Linkedin</NavLink>
           </li>
           <li>
-            <a
-              className="underline hover:text-blue-600"
-              href="https://github.com/xdguido"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              GitHub
-            </a>
+            <NavLink href="https://github.com/xdguido">GitHub</NavLink>
           </li>
           <li>
-            <a
-              className="underline hover:text-blue-600"
-              href="mailto:guidogennari95@gmail.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              email@me
-            </a>
+            <NavLink href="mailto:guidogennari95@gmail.com">email@me</NavLink>
           </li>
         </ul>
       </section>
