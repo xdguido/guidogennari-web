@@ -2,7 +2,8 @@
 import { Button } from '@ui/Button';
 import { NextSeo } from 'next-seo';
 import { PrinterIcon } from '@heroicons/react/24/outline';
-import { FiLinkedin, FiMail, FiMapPin } from 'react-icons/fi';
+import { FiMapPin } from 'react-icons/fi';
+import { SiLinkedin, SiMaildotru } from 'react-icons/si';
 
 export default function Resume() {
   return (
@@ -10,14 +11,14 @@ export default function Resume() {
       <NextSeo title="Guido Gennari | Resume" />
       <div className="relative mt-20 print:mt-0">
         <Button
-          className="absolute right-0 top-4 z-10 print:hidden"
+          className="absolute right-4 top-4 z-10 print:hidden"
           variant="link"
           onClick={() => window.print()}
         >
           <span className="sr-only">print</span>
           <PrinterIcon className="h-5 w-5" />
         </Button>
-        <div id="resume" className="relative flex flex-col gap-8 p-6 text-sm print:text-black">
+        <div id="resume" className="relative flex flex-col gap-8 p-8 text-sm print:text-black">
           <h1 className="text-5xl font-bold">
             Hi,
             <br /> I{"'"}m Guido Gennari.
@@ -173,13 +174,13 @@ export default function Resume() {
                 <h2 className="text-xl font-semibold text-accent-foreground">Contact</h2>
                 <ul className="list-none space-y-2">
                   <li className="flex items-center gap-2">
-                    <FiMail className="h-5 w-5" />
+                    <SiMaildotru className="h-5 w-5" />
                     <a href="mailto:" target="_blank" rel="noopener noreferrer">
                       guidogennari95@gmail.com
                     </a>
                   </li>
                   <li className="flex items-center gap-2">
-                    <FiLinkedin className="h-5 w-5" />
+                    <SiLinkedin className="h-5 w-5" />
                     <a
                       href="https://www.linkedin.com/in/guido-gennari/"
                       target="_blank"

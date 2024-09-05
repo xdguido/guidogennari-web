@@ -9,6 +9,7 @@ export default function NavLink({ children, href }: { children: React.ReactNode;
     <Button
       asChild
       variant="link"
+      size="sm"
       className={
         router.pathname === href
           ? 'cursor-default text-muted-foreground hover:no-underline'

@@ -13,6 +13,7 @@ export default function ThemeToggler() {
       onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}
       aria-label="Toggle Dark Mode"
       variant="link"
+      size="sm"
     >
       <span className="sr-only">Change theme</span>
       {theme === 'light' ? <FiSun className=" h-5 w-5" /> : <FiMoon className=" h-5 w-5" />}
