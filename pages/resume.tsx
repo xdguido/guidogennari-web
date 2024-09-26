@@ -1,41 +1,41 @@
-/* eslint-disable react/no-unescaped-entities */
 import { Button } from '@ui/Button';
 import { NextSeo } from 'next-seo';
 import { PrinterIcon } from '@heroicons/react/24/outline';
 import { FiMapPin } from 'react-icons/fi';
 import { SiLinkedin, SiMaildotru } from 'react-icons/si';
+import { useRouter } from 'next/router';
+import en from '../lib/resume/en';
+import es from '../lib/resume/es';
 
 export default function Resume() {
+  const router = useRouter();
+  const { locale } = router;
+  const t = locale === 'en' ? en : es;
+
   return (
     <>
-      <NextSeo title="Guido Gennari | Resume" />
+      <NextSeo title={t.title} />
       <div className="relative mt-20 print:mt-0">
         <Button
           className="absolute right-4 top-4 z-10 print:hidden"
           variant="link"
           onClick={() => window.print()}
+          title={t.print}
         >
-          <span className="sr-only">print</span>
+          <span className="sr-only">{t.print}</span>
           <PrinterIcon className="h-5 w-5" />
         </Button>
         <div id="resume" className="relative flex flex-col gap-8 p-8 text-sm print:text-black">
-          <h1 className="text-5xl font-bold">
-            Hi,
-            <br /> I{"'"}m Guido Gennari.
-          </h1>
-          <p className="text-xl tracking-tight text-gray-400">Frontend developer</p>
+          <h1 className="text-5xl font-bold">{t.greeting}</h1>
+          <p className="text-xl tracking-tight text-gray-400">{t.profession}</p>
           <section id="about" className="flex flex-col">
-            <p>
-              I{"'"}m a frontend web developer with strong knowledge of backend. I have expertise in
-              building web sites and full stack web applications, currently working with React.
-              Focusing on UI dev, web perf and accessibility.
-            </p>
+            <p>{t.about}</p>
           </section>
           <div className="flex flex-col-reverse gap-2 sm:flex-row sm:gap-8">
             <div className="basis-1/3">
               <section id="stack" className="mb-4 flex flex-col gap-2">
-                <h2 className="text-xl font-semibold text-accent-foreground">Skills</h2>
-                <p className="my-2 font-bold">Tech Stack:</p>
+                <h2 className="text-xl font-semibold text-accent-foreground">{t.skills}</h2>
+                <p className="my-2 font-bold">{t.techStack}</p>
                 <ul className="ml-5 list-disc ">
                   <li className="mb-1">
                     <a href="https://www.javascript.com/" target="_blank" rel="noopener noreferrer">
@@ -113,7 +113,7 @@ export default function Resume() {
                     </a>
                   </li>
                 </ul>
-                <p className="my-2 font-bold">Tools:</p>
+                <p className="my-2 font-bold">{t.tools}</p>
                 <ul className="ml-5 list-disc ">
                   <li className="mb-1">
                     <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
@@ -162,21 +162,22 @@ export default function Resume() {
                 </ul>
               </section>
               <section id="soft-skills" className="mb-4 flex flex-col gap-2 ">
-                <h2 className="text-xl font-semibold text-accent-foreground    ">Soft Skills</h2>
+                <h2 className="text-xl font-semibold text-accent-foreground">{t.softSkills}</h2>
                 <ul className="ml-5 list-disc">
-                  <li className="mb-1">Self-taught</li>
-                  <li className="mb-1">Problem solving</li>
-                  <li className="mb-1">Attention to detail</li>
-                  <li className="mb-1">Adaptability</li>
+                  {t.softSkillsList.map((skill, index) => (
+                    <li key={index} className="mb-1">
+                      {skill}
+                    </li>
+                  ))}
                 </ul>
               </section>
               <section id="contact" className="mb-4 flex flex-col gap-2 ">
-                <h2 className="text-xl font-semibold text-accent-foreground">Contact</h2>
+                <h2 className="text-xl font-semibold text-accent-foreground">{t.contact}</h2>
                 <ul className="list-none space-y-2">
                   <li className="flex items-center gap-2">
                     <SiMaildotru className="h-5 w-5" />
                     <a href="mailto:" target="_blank" rel="noopener noreferrer">
-                      guidogennari95@gmail.com
+                      {t.email}
                     </a>
                   </li>
                   <li className="flex items-center gap-2">
@@ -186,7 +187,7 @@ export default function Resume() {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      linkedin/guido-gennari
+                      {t.linkedin}
                     </a>
                   </li>
                   <li className="flex items-center gap-2">
@@ -196,7 +197,7 @@ export default function Resume() {
                       rel="noopener noreferrer"
                       href="https://www.google.com/maps/place/Neuquen,+Neuqu%C3%A9n+Province/@-38.941072,-68.1979739,19449m/data=!3m2!1e3!4b1!4m6!3m5!1s0x960a33ba35eb8e35:0x6220acb810e3e2f5!8m2!3d-38.9516784!4d-68.0591888!16zL20vMDJ0YmZn?entry=ttu&g_ep=EgoyMDI0MDgyNy4wIKXMDSoASAFQAw%3D%3D"
                     >
-                      Neuquen (city), Argentina
+                      {t.location}
                     </a>
                   </li>
                 </ul>
@@ -204,47 +205,35 @@ export default function Resume() {
             </div>
             <div className="basis-2/3">
               <section id="experience" className="mb-4 flex flex-col gap-2 ">
-                <h2 className="text-xl font-semibold text-accent-foreground  ">Experience</h2>
+                <h2 className="text-xl font-semibold text-accent-foreground">{t.experience}</h2>
                 <span className="text-gray-400">Aug 2023 - Present | London - UK | Remote</span>
                 <p className="">
-                  <span className="font-semibold">Frontend developer at ClimateScience.</span>
+                  <span className="font-semibold">{t.frontendDeveloper}</span>
                 </p>
-                <p>
-                  I have been developing and mantaining several products, ranging from complete
-                  website redesigns, full-stack products, new features and bug fixes, with strong
-                  focus on UI/UX, web perf and accessibility, using Next.js (React), Radix UI
-                  components, Storybook.
-                </p>
+                <p>{t.experienceDescription}</p>
               </section>
               <section id="courses" className="mb-4 flex flex-col gap-2 ">
-                <h2 className="text-xl font-semibold text-accent-foreground">Courses</h2>
+                <h2 className="text-xl font-semibold text-accent-foreground">{t.courses}</h2>
                 <span className="text-gray-400">2023 | Cordoba - Argentina | Remote</span>
                 <p className="">
-                  <span className="font-semibold">Software development</span> at Technology with
-                  Purpose Foundation.
+                  <span className="font-semibold">{t.softwareDevelopment}</span>
                 </p>
-                <p>
-                  Give hands-on experience in building a production web application in a team
-                  environment.
-                </p>
+                <p>{t.coursesDescription}</p>
               </section>
               <section id="education" className="mb-4 flex flex-col gap-2 ">
-                <h2 className="text-xl font-semibold text-accent-foreground  ">Education</h2>
+                <h2 className="text-xl font-semibold text-accent-foreground">{t.education}</h2>
                 <span className="text-gray-400">2014 - 2019 | Neuquen - Argentina</span>
                 <p className="">
-                  <span className="font-semibold">Engineering</span> at National University of
-                  Comahue.
+                  <span className="font-semibold">{t.engineering}</span>
                 </p>
                 <span className="text-gray-400">2009 - 2013 | Neuquen - Argentina</span>
-                <p className="">
-                  Biology <span className="font-semibold">Bachelor of Science</span>.
-                </p>
+                <p className="">{t.biology}</p>
               </section>
               <section id="languages" className="mb-4 flex flex-col gap-2 ">
-                <h2 className="text-xl font-semibold text-accent-foreground  ">Languages</h2>
+                <h2 className="text-xl font-semibold text-accent-foreground">{t.languages}</h2>
                 <ul className="ml-5  list-disc">
-                  <li className="mb-1">Spanish (native)</li>
-                  <li className="mb-1">English</li>
+                  <li className="mb-1">{t.spanish}</li>
+                  <li className="mb-1">{t.english}</li>
                 </ul>
               </section>
             </div>

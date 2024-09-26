@@ -1,9 +1,13 @@
 import { useTheme } from 'next-themes';
+import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
 import { FiMoon, FiSun } from 'react-icons/fi';
 import { Button } from './Button';
 
 export default function ThemeToggler() {
+  const router = useRouter();
+  const { locale } = router;
+  const t = locale === 'en' ? { switchTheme: 'Toggle theme' } : { switchTheme: 'Cambiar tema' };
   const { theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
   useEffect(() => setMounted(true), []);
@@ -14,8 +18,8 @@ export default function ThemeToggler() {
       aria-label="Toggle Dark Mode"
       variant="link"
       size="sm"
+      title={t.switchTheme}
     >
-      <span className="sr-only">Change theme</span>
       {theme === 'light' ? <FiSun className=" h-5 w-5" /> : <FiMoon className=" h-5 w-5" />}
     </Button>
   );

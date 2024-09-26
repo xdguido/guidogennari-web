@@ -1,6 +1,12 @@
 import NavLink from '@ui/NavLink';
+import { useRouter } from 'next/router';
+import en from '../lib/about/en';
+import es from '../lib/about/es';
 
 export default function Home() {
+  const router = useRouter();
+  const { locale } = router;
+  const t = locale === 'en' ? en : es;
   return (
     <>
       <div className="absolute left-0 top-0 z-0 hidden h-full w-full overflow-hidden sm:block">
@@ -30,22 +36,10 @@ export default function Home() {
         </div>
       </div>
       <section className="relative z-10 w-full space-y-8 rounded-md bg-slate-50 p-8 text-sm leading-5 dark:bg-black sm:border sm:border-gray-500 sm:p-16 sm:shadow-md">
-        <h1 className="text-2xl font-bold">About</h1>
-        <p>
-          Hi! I&apos;m a web developer based in Argentina. Recently I joined ClimateScience as a
-          frontend developer, where I work remotely on a variety of projects. I have wide range of
-          interests, from web development and game design to photography and mountaineering.
-        </p>
-        <p>
-          I&apos;ve always been interested in technology and computers. I used code extensively in
-          statistical studies during my engineering career and games mod and server develop as a
-          hobby. During the last years I learned web development and started working as a
-          freelancer, spending significant time building web apps.
-        </p>
-        <p>
-          For more information about me and my interests, feel free to contact me or explore my
-          social media profiles.
-        </p>
+        <h1 className="text-2xl font-bold">{t.title}</h1>
+        <p>{t.paragraph1}</p>
+        <p>{t.paragraph2}</p>
+        <p>{t.paragraph3}</p>
         <div className="w-full border-b border-b-gray-500">{/* separator */}</div>
         <ul className="flex">
           <li>
