@@ -29,7 +29,7 @@ function LanguageToggler() {
       onClick={handleToggle}
       variant="link"
       size="sm"
-      aria-label="Change Language"
+      aria-label={t.switchLanguage}
       title={t.switchLanguage}
     >
       <LanguageIcon className="h-5 w-5" aria-hidden={true} />

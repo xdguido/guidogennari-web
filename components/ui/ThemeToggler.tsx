@@ -15,9 +15,9 @@ export default function ThemeToggler() {
   return (
     <Button
       onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}
-      aria-label="Toggle Dark Mode"
       variant="link"
       size="sm"
+      aria-label={t.switchTheme}
       title={t.switchTheme}
     >
       {theme === 'light' ? <FiSun className=" h-5 w-5" /> : <FiMoon className=" h-5 w-5" />}
