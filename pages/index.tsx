@@ -43,16 +43,27 @@ export default function Home() {
         <div className="w-full border-b border-b-gray-500">{/* separator */}</div>
         <ul className="flex">
           <li>
-            <NavLink href="https://www.instagram.com/gennariguido/">Instagram</NavLink>
+            <NavLink target={'_blank'} href="https://www.instagram.com/gennariguido/">
+              Instagram
+            </NavLink>
           </li>
           <li>
-            <NavLink href="https://www.linkedin.com/in/guido-gennari/">Linkedin</NavLink>
+            <NavLink target={'_blank'} href="https://www.linkedin.com/in/guido-gennari/">
+              Linkedin
+            </NavLink>
           </li>
           <li>
-            <NavLink href="https://github.com/xdguido">GitHub</NavLink>
+            <NavLink target={'_blank'} href="https://github.com/xdguido">
+              GitHub
+            </NavLink>
           </li>
           <li>
             <NavLink href="mailto:guidogennari95@gmail.com">email@me</NavLink>
+          </li>
+          <li>
+            <NavLink target={'_blank'} href="https://guido-ph.vercel.app/">
+              {t.links.photography}
+            </NavLink>
           </li>
         </ul>
       </section>

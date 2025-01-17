@@ -5,7 +5,11 @@ const en = {
   paragraph2:
     "I've always been interested in technology and computers. I used code extensively in statistical studies during my engineering career and games mod and server development as a hobby. During the last years, I learned web development and started working as a freelancer, spending significant time building web apps.",
   paragraph3:
-    'For more information about me and my interests, feel free to contact me or explore my social media profiles.'
+    'For more information about me and my interests, feel free to contact me or explore my social media profiles.',
+  links: {
+    resume: 'Resume',
+    photography: 'Photography'
+  }
 };
 
 export default en;

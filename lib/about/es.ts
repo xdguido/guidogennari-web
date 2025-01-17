@@ -5,7 +5,11 @@ const es = {
   paragraph2:
     'Siempre me ha interesado la tecnología y las computadoras. Utilicé el código extensamente en estudios estadísticos durante mi carrera de ingeniería y en el desarrollo de mods y servidores de juegos como pasatiempo. Durante los últimos años, aprendí desarrollo web y comencé a trabajar como freelancer, dedicando mucho tiempo a la construcción de aplicaciones web.',
   paragraph3:
-    'Para conocer mas sobre mí y mis intereses, no dudes en contactarme o explorar mis perfiles en redes sociales.'
+    'Para conocer mas sobre mí y mis intereses, no dudes en contactarme o explorar mis perfiles en redes sociales.',
+  links: {
+    resume: 'Currículum',
+    photography: 'Fotografía'
+  }
 };
 
 export default es;

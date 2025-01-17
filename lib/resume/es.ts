@@ -21,7 +21,7 @@ const es = {
   coursesDescription:
     'Brinda experiencia práctica en la construcción de una aplicación web de producción en un entorno de equipo.',
   engineering: 'Ingeniería en la Universidad Nacional del Comahue.',
-  biology: 'Licenciatura en Ciencias Biológicas.',
+  biology: 'Bachillerato en Ciencias Biológicas.',
   spanish: 'Español (nativo)',
   english: 'Inglés',
   print: 'imprimir',

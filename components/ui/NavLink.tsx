@@ -1,8 +1,14 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { Button } from './Button';
+import { ComponentPropsWithoutRef } from 'react';
 
-export default function NavLink({ children, href }: { children: React.ReactNode; href: string }) {
+type NavLinkProps = {
+  children: React.ReactNode;
+  href: string;
+} & Omit<ComponentPropsWithoutRef<'a'>, 'href'>;
+
+export default function NavLink({ children, href, ...props }: NavLinkProps) {
   const router = useRouter();
 
   return (
@@ -16,7 +22,9 @@ export default function NavLink({ children, href }: { children: React.ReactNode;
           : 'text-primary underline-offset-4 hover:underline'
       }
     >
-      <Link href={href}>{children}</Link>
+      <Link href={href} {...props}>
+        {children}
+      </Link>
     </Button>
   );
 }
