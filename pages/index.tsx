@@ -35,7 +35,7 @@ export default function Home() {
           ></div>
         </div>
       </div>
-      <section className="relative z-10 w-full space-y-8 rounded-md bg-slate-50 p-8 text-sm leading-5 dark:bg-black sm:border sm:border-gray-500 sm:p-16 sm:shadow-md">
+      <section className="relative z-10 w-full space-y-8 rounded-lg bg-slate-50 p-8 text-sm leading-5 dark:bg-black sm:border sm:border-gray-400/90 sm:p-16 sm:shadow-md dark:sm:border-gray-600/90">
         <h1 className="text-2xl font-bold">{t.title}</h1>
         <p>{t.paragraph1}</p>
         <p>{t.paragraph2}</p>
