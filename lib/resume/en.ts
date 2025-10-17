@@ -4,6 +4,7 @@ const en = {
   profession: 'Frontend developer',
   about:
     "I'm a frontend web developer with strong knowledge of backend. I have expertise in building web sites and full stack web applications, currently working with React. Focusing on UI dev, web perf and accessibility.",
+  aboutHeading: 'About',
   skills: 'Skills',
   techStack: 'Tech Stack:',
   tools: 'Tools:',
@@ -11,6 +12,8 @@ const en = {
   softSkillsList: ['Detail-oriented', 'Self-taught', 'Problem-solving', 'Collaboration'],
   contact: 'Contact',
   experience: 'Experience',
+  projects: 'Projects',
+  ongoing: 'Ongoing',
   courses: 'Courses',
   education: 'Education',
   languages: 'Languages',
@@ -27,7 +30,13 @@ const en = {
   print: 'print',
   email: 'guidogennari95@gmail.com',
   linkedin: 'linkedin/guido-gennari',
-  location: 'Neuquen (city), Argentina'
+  location: 'Neuquen (city), Argentina',
+  emailLabel: 'Email',
+  linkedinLabel: 'LinkedIn',
+  locationLabel: 'Location',
+  now: 'Now',
+  projectsDescription:
+    'Personal open-source projects and experiments focusing on UI/UX, performance, and accessibility.'
 };
 
 export default en;
