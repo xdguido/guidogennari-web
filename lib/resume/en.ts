@@ -1,9 +1,9 @@
 const en = {
   title: 'Guido Gennari | Resume',
   greeting: "Hi, I'm Guido Gennari.",
-  profession: 'Frontend developer',
+  profession: 'Fullstack Web developer',
   about:
-    "I'm a frontend web developer with strong knowledge of backend. I have expertise in building web sites and full stack web applications, currently working with React. Focusing on UI dev, web perf and accessibility.",
+    "I'm a fullstack web developer with strong knowledge of backend. I have expertise in building web sites and full stack web applications, currently working with React. Focusing on UI dev, web perf and accessibility.",
   aboutHeading: 'About',
   skills: 'Skills',
   techStack: 'Tech Stack:',
@@ -36,7 +36,23 @@ const en = {
   locationLabel: 'Location',
   now: 'Now',
   projectsDescription:
-    'Personal open-source projects and experiments focusing on UI/UX, performance, and accessibility.'
+    'Personal open-source projects and experiments focusing on UI/UX, performance, and accessibility.',
+  xdStudio: {
+    name: 'XD.STUDIO Software Development',
+    url: 'https://www.xdstudiogg.com/',
+    subtitle: 'A site for selling my dev services',
+    features: [
+      'Application Development — Tailored software solutions to optimize operations and improve team efficiency.',
+      'Modern Websites — Responsive, optimized websites to attract more customers to your local business.',
+      'Process Automation — Automate repetitive tasks and improve customer service with smart solutions.',
+      'Internal Tools — Custom tools to boost your team’s productivity and efficiency.'
+    ]
+  },
+  trackingApp: {
+    name: 'TrackingApp',
+    url: 'https://tknow.vercel.app/',
+    subtitle: 'A complete logistic solution for personnel transport in the oil & gas industry.'
+  }
 };
 
 export default en;

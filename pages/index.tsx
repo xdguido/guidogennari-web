@@ -61,7 +61,48 @@ export default function Home() {
         {/* Projects */}
         <section className="mb-16">
           <h2 className="mb-6 text-sm font-normal">{tr.projects}</h2>
-          <div className="grid grid-cols-[140px_1fr] gap-x-8 gap-y-6">
+
+          <div className="mt-8 grid grid-cols-[140px_1fr] gap-x-8 gap-y-6">
+            <div className="text-sm text-neutral-600 dark:text-neutral-400">{tr.ongoing}</div>
+            <div>
+              <a
+                href={tr.xdStudio?.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mb-2 inline-flex items-center gap-1 text-sm font-normal underline-offset-4 transition-all hover:underline"
+              >
+                {tr.xdStudio?.name}
+                <ArrowUpRightIcon className="h-3 w-3" />
+              </a>
+              {tr.xdStudio?.subtitle && (
+                <p className="mb-2 text-sm leading-relaxed text-neutral-600 dark:text-neutral-400">
+                  {tr.xdStudio.subtitle}
+                </p>
+              )}
+            </div>
+          </div>
+
+          <div className="mt-8 grid grid-cols-[140px_1fr] gap-x-8 gap-y-6">
+            <div className="text-sm text-neutral-600 dark:text-neutral-400">{tr.ongoing}</div>
+            <div>
+              <a
+                href={tr.trackingApp?.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mb-2 inline-flex items-center gap-1 text-sm font-normal underline-offset-4 transition-all hover:underline"
+              >
+                {tr.trackingApp?.name}
+                <ArrowUpRightIcon className="h-3 w-3" />
+              </a>
+              {tr.trackingApp?.subtitle && (
+                <p className="mb-2 text-sm leading-relaxed text-neutral-600 dark:text-neutral-400">
+                  {tr.trackingApp.subtitle}
+                </p>
+              )}
+            </div>
+          </div>
+
+          <div className="mt-8 grid grid-cols-[140px_1fr] gap-x-8 gap-y-6">
             <div className="text-sm text-neutral-600 dark:text-neutral-400">{tr.ongoing}</div>
             <div>
               <a

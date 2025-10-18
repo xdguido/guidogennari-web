@@ -36,7 +36,24 @@ const es = {
   locationLabel: 'Ubicación',
   now: 'Ahora',
   projectsDescription:
-    'Proyectos personales de código abierto y experimentos con foco en UI/UX, rendimiento y accesibilidad.'
+    'Proyectos personales de código abierto y experimentos con foco en UI/UX, rendimiento y accesibilidad.',
+  xdStudio: {
+    name: 'XD.STUDIO Desarrollo de Software',
+    url: 'https://www.xdstudiogg.com/',
+    subtitle: 'Un sitio para ofrecer mis servicios de desarrollo',
+    features: [
+      'Desarrollo de Aplicaciones — Soluciones de software a medida para optimizar tus procesos operativos y mejorar la eficiencia de tu equipo.',
+      'Sitios Web Modernos — Desarrollo de sitios web responsivos y optimizados para atraer más clientes a tu negocio local.',
+      'Automatización de Procesos — Automatiza tareas repetitivas y mejora la atención al cliente con soluciones inteligentes.',
+      'Herramientas Internas — Desarrollamos herramientas personalizadas para mejorar la productividad y eficiencia de tu equipo de trabajo.'
+    ]
+  },
+  trackingApp: {
+    name: 'TrackingApp',
+    url: 'https://tknow.vercel.app/',
+    subtitle:
+      'Una solución logística completa para el transporte de personal en la industria de Oil & Gas.'
+  }
 };
 
 export default es;
