@@ -1,9 +1,9 @@
 const es = {
   title: 'Guido Gennari | Currículum',
   greeting: 'Hola, soy Guido Gennari.',
-  profession: 'Desarrollador frontend',
+  profession: 'Desarrollador Web Fullstack',
   about:
-    'Soy un desarrollador web frontend con un fuerte conocimiento de backend. Tengo experiencia en la construcción de sitios web y aplicaciones web full stack, actualmente trabajando con React. Enfocándome en el desarrollo de UI, rendimiento web y accesibilidad.',
+    'Soy un desarrollador web fullstack con especializacion en desarrollo de apps React para moviles y escritorio. Tengo experiencia en la construcción de sitios web y aplicaciones web full stack, actualmente trabajando con React. Enfocándome en el desarrollo de UI, rendimiento web y accesibilidad.',
   aboutHeading: 'Acerca de mí',
   skills: 'Habilidades',
   techStack: 'Tecnologías:',
@@ -17,6 +17,9 @@ const es = {
   courses: 'Cursos',
   education: 'Educación',
   languages: 'Idiomas',
+  freelanceDeveloper: 'Desarrollador fullstack freelance especializado en React/Next.js.',
+  freelanceDescription:
+    'Desarrollo aplicaciones web y móviles personalizadas para clientes B2B, incluyendo sistemas de logística, aplicaciones de presupuestado para la industria del amoblamiento, y herramientas internas de gestión. Enfoque en crear soluciones escalables con React, Next.js, TypeScript, y bases de datos modernas, priorizando UI/UX intuitiva, rendimiento optimizado y accesibilidad.',
   frontendDeveloper: 'Desarrollador frontend en ClimateScience.',
   experienceDescription:
     'He estado desarrollando y manteniendo varios productos, que van desde rediseños completos de sitios web, productos full-stack, nuevas características y corrección de errores, con un fuerte enfoque en UI/UX, rendimiento web y accesibilidad, utilizando Next.js (React), componentes Radix UI, Storybook.',

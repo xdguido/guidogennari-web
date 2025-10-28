@@ -3,7 +3,7 @@ const en = {
   greeting: "Hi, I'm Guido Gennari.",
   profession: 'Fullstack Web developer',
   about:
-    "I'm a fullstack web developer with strong knowledge of backend. I have expertise in building web sites and full stack web applications, currently working with React. Focusing on UI dev, web perf and accessibility.",
+    "I'm a fullstack web developer. I have expertise in building web sites and full stack web applications, currently working with React. Focusing on UI dev, web perf and accessibility.",
   aboutHeading: 'About',
   skills: 'Skills',
   techStack: 'Tech Stack:',
@@ -17,7 +17,11 @@ const en = {
   courses: 'Courses',
   education: 'Education',
   languages: 'Languages',
+  freelanceDeveloper: 'Freelance fullstack developer specializing in React/Next.js.',
+  freelanceDescription:
+    'Develop custom web and mobile applications for B2B clients, including logistics systems, budgeting applications for the furniture industry, and internal management tools. Focus on creating scalable solutions with React, Next.js, TypeScript, and modern databases, prioritizing intuitive UI/UX, optimized performance, and accessibility.',
   frontendDeveloper: 'Frontend developer at ClimateScience.',
+
   experienceDescription:
     'I have been developing and maintaining several products, ranging from complete website redesigns, full-stack products, new features and bug fixes, with strong focus on UI/UX, web perf and accessibility, using Next.js (React), Radix UI components, Storybook.',
   softwareDevelopment: 'Software development at Technology with Purpose Foundation.',

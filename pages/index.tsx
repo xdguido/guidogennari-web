@@ -45,7 +45,18 @@ export default function Home() {
           <h2 className="mb-6 text-sm font-normal">{tr.experience}</h2>
           <div className="grid grid-cols-[140px_1fr] gap-x-8 gap-y-6">
             <div className="text-sm text-neutral-600 dark:text-neutral-400">
-              Aug 2023 — {tr.now}
+              Feb 2024 — {tr.now}
+            </div>
+            <div>
+              <p className="mb-2 inline-flex items-center gap-1 text-sm font-normal">
+                {tr.freelanceDeveloper}
+              </p>
+              <p className="text-sm leading-relaxed text-neutral-600 dark:text-neutral-400">
+                {tr.freelanceDescription}
+              </p>
+            </div>
+            <div className="text-sm text-neutral-600 dark:text-neutral-400">
+              Jul 2023 — Feb 2025
             </div>
             <div>
               <p className="mb-2 inline-flex items-center gap-1 text-sm font-normal">
