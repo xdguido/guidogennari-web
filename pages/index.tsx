@@ -112,24 +112,6 @@ export default function Home() {
               )}
             </div>
           </div>
-
-          <div className="mt-8 grid grid-cols-[140px_1fr] gap-x-8 gap-y-6">
-            <div className="text-sm text-neutral-600 dark:text-neutral-400">{tr.ongoing}</div>
-            <div>
-              <a
-                href="https://github.com/xdguido"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mb-2 inline-flex items-center gap-1 text-sm font-normal underline-offset-4 transition-all hover:underline"
-              >
-                github.com/xdguido
-                <ArrowUpRightIcon className="h-3 w-3" />
-              </a>
-              <p className="text-sm leading-relaxed text-neutral-600 dark:text-neutral-400">
-                {tr.projectsDescription}
-              </p>
-            </div>
-          </div>
         </section>
 
         {/* Contact */}
