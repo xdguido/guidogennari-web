@@ -55,9 +55,7 @@ export default function Home() {
                 {tr.freelanceDescription}
               </p>
             </div>
-            <div className="text-sm text-neutral-600 dark:text-neutral-400">
-              Jul 2023 — Feb 2025
-            </div>
+            <div className="text-sm text-neutral-600 dark:text-neutral-400">Jul 2023 — Present</div>
             <div>
               <p className="mb-2 inline-flex items-center gap-1 text-sm font-normal">
                 {tr.frontendDeveloper}
